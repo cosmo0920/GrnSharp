@@ -479,7 +479,6 @@ public partial class NativeConstants {
     /// GRN_TIME_USEC_PER_SEC -> 1000000
     public const int GRN_TIME_USEC_PER_SEC = 1000000;
     
-    
     /// GRN_STR_REMOVEBLANK -> (0x01<<0)
     public const int GRN_STR_REMOVEBLANK = (1) << (0);
     
