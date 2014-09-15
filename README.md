@@ -16,3 +16,7 @@ Processing header files ... Done
 
 Generating Interop Code -> NativeMethods.cs ... Done
 ```
+
+### LICENSE
+
+This program is same license as Groonga. [LGPL 2.1](http://www.opensource.org/licenses/lgpl-2.1.php).
