@@ -3,7 +3,8 @@ GrnSharp
 
 A .NET binding for [Groonga](http://groonga.org).
 
-This binding has been generated with [PInvoke Interop Assistant](http://clrinterop.codeplex.com/):
+This binding has been generated with [PInvoke Interop Assistant](http://clrinterop.codeplex.com/).
+
 This binding is provided as dll.
 
 ```shell
