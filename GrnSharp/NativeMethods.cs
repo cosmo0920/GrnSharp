@@ -1615,95 +1615,95 @@ public partial class NativeMethods {
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     [DllImportAttribute("groonga.dll", EntryPoint="grn_init")]
-public static extern  grn_rc grn_init() ;
+    public static extern  grn_rc grn_init() ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     [DllImportAttribute("groonga.dll", EntryPoint="grn_fin")]
-public static extern  grn_rc grn_fin() ;
+    public static extern  grn_rc grn_fin() ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///flags: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_init")]
-public static extern  grn_rc grn_ctx_init(ref grn_ctx ctx, int flags) ;
+    public static extern  grn_rc grn_ctx_init(ref grn_ctx ctx, int flags) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_fin")]
-public static extern  grn_rc grn_ctx_fin(ref grn_ctx ctx) ;
+    public static extern  grn_rc grn_ctx_fin(ref grn_ctx ctx) ;
 
     
     /// Return Type: grn_ctx*
     ///flags: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_open")]
-public static extern  System.IntPtr grn_ctx_open(int flags) ;
+    public static extern  System.IntPtr grn_ctx_open(int flags) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_close")]
-public static extern  grn_rc grn_ctx_close(ref grn_ctx ctx) ;
+    public static extern  grn_rc grn_ctx_close(ref grn_ctx ctx) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///func: grn_proc_func*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_set_finalizer")]
-public static extern  grn_rc grn_ctx_set_finalizer(ref grn_ctx ctx, ref grn_proc_func func) ;
+    public static extern  grn_rc grn_ctx_set_finalizer(ref grn_ctx ctx, ref grn_proc_func func) ;
 
     
     /// Return Type: grn_encoding->Anonymous_4cc9cdbc_7025_4e0d_86b2_46372051bb24
     [DllImportAttribute("groonga.dll", EntryPoint="grn_get_default_encoding")]
-public static extern  grn_encoding grn_get_default_encoding() ;
+    public static extern  grn_encoding grn_get_default_encoding() ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///encoding: grn_encoding->Anonymous_4cc9cdbc_7025_4e0d_86b2_46372051bb24
     [DllImportAttribute("groonga.dll", EntryPoint="grn_set_default_encoding")]
-public static extern  grn_rc grn_set_default_encoding(grn_encoding encoding) ;
+    public static extern  grn_rc grn_set_default_encoding(grn_encoding encoding) ;
 
     
     /// Return Type: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_get_version")]
-public static extern  System.IntPtr grn_get_version() ;
+    public static extern  System.IntPtr grn_get_version() ;
 
     
     /// Return Type: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_get_package")]
-public static extern  System.IntPtr grn_get_package() ;
+    public static extern  System.IntPtr grn_get_package() ;
 
     
     /// Return Type: grn_command_version->Anonymous_0e1d1b04_972f_4266_9c81_efb77a82e13d
     [DllImportAttribute("groonga.dll", EntryPoint="grn_get_default_command_version")]
-public static extern  grn_command_version grn_get_default_command_version() ;
+    public static extern  grn_command_version grn_get_default_command_version() ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///version: grn_command_version->Anonymous_0e1d1b04_972f_4266_9c81_efb77a82e13d
     [DllImportAttribute("groonga.dll", EntryPoint="grn_set_default_command_version")]
-public static extern  grn_rc grn_set_default_command_version(grn_command_version version) ;
+    public static extern  grn_rc grn_set_default_command_version(grn_command_version version) ;
 
     
     /// Return Type: grn_command_version->Anonymous_0e1d1b04_972f_4266_9c81_efb77a82e13d
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_get_command_version")]
-public static extern  grn_command_version grn_ctx_get_command_version(ref grn_ctx ctx) ;
+    public static extern  grn_command_version grn_ctx_get_command_version(ref grn_ctx ctx) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///version: grn_command_version->Anonymous_0e1d1b04_972f_4266_9c81_efb77a82e13d
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_set_command_version")]
-public static extern  grn_rc grn_ctx_set_command_version(ref grn_ctx ctx, grn_command_version version) ;
+    public static extern  grn_rc grn_ctx_set_command_version(ref grn_ctx ctx, grn_command_version version) ;
 
     
     /// Return Type: int
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_get_match_escalation_threshold")]
-public static extern  int grn_ctx_get_match_escalation_threshold(ref grn_ctx ctx) ;
+    public static extern  int grn_ctx_get_match_escalation_threshold(ref grn_ctx ctx) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -1711,42 +1711,42 @@ public static extern  int grn_ctx_get_match_escalation_threshold(ref grn_ctx ctx
     ///param1: int
     ///threshold: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_set_match_escalation_threshold")]
-public static extern  grn_rc grn_ctx_set_match_escalation_threshold(ref grn_ctx ctx, int param1, int threshold) ;
+    public static extern  grn_rc grn_ctx_set_match_escalation_threshold(ref grn_ctx ctx, int param1, int threshold) ;
 
     
     /// Return Type: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_get_default_match_escalation_threshold")]
-public static extern  int grn_get_default_match_escalation_threshold() ;
+    public static extern  int grn_get_default_match_escalation_threshold() ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///param0: int
     ///threshold: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_set_default_match_escalation_threshold")]
-public static extern  grn_rc grn_set_default_match_escalation_threshold(int param0, int threshold) ;
+    public static extern  grn_rc grn_set_default_match_escalation_threshold(int param0, int threshold) ;
 
     
     /// Return Type: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_get_lock_timeout")]
-public static extern  int grn_get_lock_timeout() ;
+    public static extern  int grn_get_lock_timeout() ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///timeout: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_set_lock_timeout")]
-public static extern  grn_rc grn_set_lock_timeout(int timeout) ;
+    public static extern  grn_rc grn_set_lock_timeout(int timeout) ;
 
     
     /// Return Type: char*
     ///encoding: grn_encoding->Anonymous_4cc9cdbc_7025_4e0d_86b2_46372051bb24
     [DllImportAttribute("groonga.dll", EntryPoint="grn_encoding_to_string")]
-public static extern  System.IntPtr grn_encoding_to_string(grn_encoding encoding) ;
+    public static extern  System.IntPtr grn_encoding_to_string(grn_encoding encoding) ;
 
     
     /// Return Type: grn_encoding->Anonymous_4cc9cdbc_7025_4e0d_86b2_46372051bb24
     ///name: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_encoding_parse")]
-public static extern  grn_encoding grn_encoding_parse([InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name) ;
+    public static extern  grn_encoding grn_encoding_parse([InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name) ;
 
     
     /// Return Type: grn_obj*
@@ -1754,34 +1754,34 @@ public static extern  grn_encoding grn_encoding_parse([InAttribute()] [MarshalAs
     ///path: char*
     ///optarg: grn_db_create_optarg*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_db_create")]
-public static extern  System.IntPtr grn_db_create(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path, ref grn_db_create_optarg optarg) ;
+    public static extern  System.IntPtr grn_db_create(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path, ref grn_db_create_optarg optarg) ;
 
     
     /// Return Type: grn_obj*
     ///ctx: grn_ctx*
     ///path: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_db_open")]
-public static extern  System.IntPtr grn_db_open(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
+    public static extern  System.IntPtr grn_db_open(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     ///db: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_db_touch")]
-public static extern  void grn_db_touch(ref grn_ctx ctx, ref grn_table_cursor db) ;
+    public static extern  void grn_db_touch(ref grn_ctx ctx, ref grn_table_cursor db) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///db: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_use")]
-public static extern  grn_rc grn_ctx_use(ref grn_ctx ctx, ref grn_table_cursor db) ;
+    public static extern  grn_rc grn_ctx_use(ref grn_ctx ctx, ref grn_table_cursor db) ;
 
     
     /// Return Type: grn_obj*
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_db")]
-public static extern  System.IntPtr grn_ctx_db(ref grn_ctx ctx) ;
+    public static extern  System.IntPtr grn_ctx_db(ref grn_ctx ctx) ;
 
     
     /// Return Type: grn_obj*
@@ -1789,14 +1789,14 @@ public static extern  System.IntPtr grn_ctx_db(ref grn_ctx ctx) ;
     ///name: char*
     ///name_size: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_get")]
-public static extern  System.IntPtr grn_ctx_get(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, int name_size) ;
+    public static extern  System.IntPtr grn_ctx_get(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, int name_size) ;
 
     
     /// Return Type: grn_obj*
     ///ctx: grn_ctx*
     ///id: grn_id->unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_at")]
-public static extern  System.IntPtr grn_ctx_at(ref grn_ctx ctx, uint id) ;
+    public static extern  System.IntPtr grn_ctx_at(ref grn_ctx ctx, uint id) ;
 
     
     /// Return Type: grn_obj*
@@ -1806,31 +1806,31 @@ public static extern  System.IntPtr grn_ctx_at(ref grn_ctx ctx, uint id) ;
     ///flags: grn_obj_flags->unsigned short
     ///size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_type_create")]
-public static extern  System.IntPtr grn_type_create(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size, ushort flags, uint size) ;
+    public static extern  System.IntPtr grn_type_create(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size, ushort flags, uint size) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///name: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_plugin_register")]
-public static extern  grn_rc grn_plugin_register(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name) ;
+    public static extern  grn_rc grn_plugin_register(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///path: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_plugin_register_by_path")]
-public static extern  grn_rc grn_plugin_register_by_path(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
+    public static extern  grn_rc grn_plugin_register_by_path(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
 
     
     /// Return Type: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_plugin_get_system_plugins_dir")]
-public static extern  System.IntPtr grn_plugin_get_system_plugins_dir() ;
+    public static extern  System.IntPtr grn_plugin_get_system_plugins_dir() ;
 
     
     /// Return Type: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_plugin_get_suffix")]
-public static extern  System.IntPtr grn_plugin_get_suffix() ;
+    public static extern  System.IntPtr grn_plugin_get_suffix() ;
 
     
     /// Return Type: grn_obj*
@@ -1844,7 +1844,7 @@ public static extern  System.IntPtr grn_plugin_get_suffix() ;
     ///nvars: unsigned int
     ///vars: grn_expr_var*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_proc_create")]
-public static extern  System.IntPtr grn_proc_create(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, int name_size, grn_proc_type type, ref grn_proc_func init, ref grn_proc_func next, ref grn_proc_func fin, uint nvars, ref grn_expr_var vars) ;
+    public static extern  System.IntPtr grn_proc_create(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, int name_size, grn_proc_type type, ref grn_proc_func init, ref grn_proc_func next, ref grn_proc_func fin, uint nvars, ref grn_expr_var vars) ;
 
     
     /// Return Type: grn_obj*
@@ -1854,14 +1854,14 @@ public static extern  System.IntPtr grn_proc_create(ref grn_ctx ctx, [InAttribut
     ///nvars: unsigned int*
     ///caller: grn_obj**
     [DllImportAttribute("groonga.dll", EntryPoint="grn_proc_get_info")]
-public static extern  System.IntPtr grn_proc_get_info(ref grn_ctx ctx, ref grn_user_data user_data, ref System.IntPtr vars, ref uint nvars, ref System.IntPtr caller) ;
+    public static extern  System.IntPtr grn_proc_get_info(ref grn_ctx ctx, ref grn_user_data user_data, ref System.IntPtr vars, ref uint nvars, ref System.IntPtr caller) ;
 
     
     /// Return Type: grn_proc_type->Anonymous_d6ebf05a_1f0a_4ff9_9e65_87ade8bc3d73
     ///ctx: grn_ctx*
     ///proc: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_proc_get_type")]
-public static extern  grn_proc_type grn_proc_get_type(ref grn_ctx ctx, ref grn_table_cursor proc) ;
+    public static extern  grn_proc_type grn_proc_get_type(ref grn_ctx ctx, ref grn_table_cursor proc) ;
 
     
     /// Return Type: grn_obj*
@@ -1873,7 +1873,7 @@ public static extern  grn_proc_type grn_proc_get_type(ref grn_ctx ctx, ref grn_t
     ///key_type: grn_obj*
     ///value_type: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_create")]
-public static extern  System.IntPtr grn_table_create(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path, ushort flags, ref grn_table_cursor key_type, ref grn_table_cursor value_type) ;
+    public static extern  System.IntPtr grn_table_create(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path, ushort flags, ref grn_table_cursor key_type, ref grn_table_cursor value_type) ;
 
     
     /// Return Type: grn_id->unsigned int
@@ -1883,7 +1883,7 @@ public static extern  System.IntPtr grn_table_create(ref grn_ctx ctx, [InAttribu
     ///key_size: unsigned int
     ///added: int*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_add")]
-public static extern  uint grn_table_add(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr key, uint key_size, ref int added) ;
+    public static extern  uint grn_table_add(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr key, uint key_size, ref int added) ;
 
     
     /// Return Type: grn_id->unsigned int
@@ -1892,7 +1892,7 @@ public static extern  uint grn_table_add(ref grn_ctx ctx, ref grn_table_cursor t
     ///key: void*
     ///key_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_get")]
-public static extern  uint grn_table_get(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr key, uint key_size) ;
+    public static extern  uint grn_table_get(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr key, uint key_size) ;
 
     
     /// Return Type: grn_id->unsigned int
@@ -1900,7 +1900,7 @@ public static extern  uint grn_table_get(ref grn_ctx ctx, ref grn_table_cursor t
     ///table: grn_obj*
     ///id: grn_id->unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_at")]
-public static extern  uint grn_table_at(ref grn_ctx ctx, ref grn_table_cursor table, uint id) ;
+    public static extern  uint grn_table_at(ref grn_ctx ctx, ref grn_table_cursor table, uint id) ;
 
     
     /// Return Type: grn_id->unsigned int
@@ -1909,7 +1909,7 @@ public static extern  uint grn_table_at(ref grn_ctx ctx, ref grn_table_cursor ta
     ///key: void*
     ///key_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_lcp_search")]
-public static extern  uint grn_table_lcp_search(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr key, uint key_size) ;
+    public static extern  uint grn_table_lcp_search(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr key, uint key_size) ;
 
     
     /// Return Type: int
@@ -1919,7 +1919,7 @@ public static extern  uint grn_table_lcp_search(ref grn_ctx ctx, ref grn_table_c
     ///keybuf: void*
     ///buf_size: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_get_key")]
-public static extern  int grn_table_get_key(ref grn_ctx ctx, ref grn_table_cursor table, uint id, System.IntPtr keybuf, int buf_size) ;
+    public static extern  int grn_table_get_key(ref grn_ctx ctx, ref grn_table_cursor table, uint id, System.IntPtr keybuf, int buf_size) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -1928,7 +1928,7 @@ public static extern  int grn_table_get_key(ref grn_ctx ctx, ref grn_table_curso
     ///key: void*
     ///key_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_delete")]
-public static extern  grn_rc grn_table_delete(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr key, uint key_size) ;
+    public static extern  grn_rc grn_table_delete(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr key, uint key_size) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -1936,7 +1936,7 @@ public static extern  grn_rc grn_table_delete(ref grn_ctx ctx, ref grn_table_cur
     ///table: grn_obj*
     ///id: grn_id->unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_delete_by_id")]
-public static extern  grn_rc grn_table_delete_by_id(ref grn_ctx ctx, ref grn_table_cursor table, uint id) ;
+    public static extern  grn_rc grn_table_delete_by_id(ref grn_ctx ctx, ref grn_table_cursor table, uint id) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -1946,7 +1946,7 @@ public static extern  grn_rc grn_table_delete_by_id(ref grn_ctx ctx, ref grn_tab
     ///dest_key: void*
     ///dest_key_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_update_by_id")]
-public static extern  grn_rc grn_table_update_by_id(ref grn_ctx ctx, ref grn_table_cursor table, uint id, System.IntPtr dest_key, uint dest_key_size) ;
+    public static extern  grn_rc grn_table_update_by_id(ref grn_ctx ctx, ref grn_table_cursor table, uint id, System.IntPtr dest_key, uint dest_key_size) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -1957,14 +1957,14 @@ public static extern  grn_rc grn_table_update_by_id(ref grn_ctx ctx, ref grn_tab
     ///dest_key: void*
     ///dest_key_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_update")]
-public static extern  grn_rc grn_table_update(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr src_key, uint src_key_size, System.IntPtr dest_key, uint dest_key_size) ;
+    public static extern  grn_rc grn_table_update(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr src_key, uint src_key_size, System.IntPtr dest_key, uint dest_key_size) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///table: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_truncate")]
-public static extern  grn_rc grn_table_truncate(ref grn_ctx ctx, ref grn_table_cursor table) ;
+    public static extern  grn_rc grn_table_truncate(ref grn_ctx ctx, ref grn_table_cursor table) ;
 
     
     /// Return Type: grn_table_cursor*
@@ -1978,21 +1978,21 @@ public static extern  grn_rc grn_table_truncate(ref grn_ctx ctx, ref grn_table_c
     ///limit: int
     ///flags: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_cursor_open")]
-public static extern  System.IntPtr grn_table_cursor_open(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr min, uint min_size, System.IntPtr max, uint max_size, int offset, int limit, int flags) ;
+    public static extern  System.IntPtr grn_table_cursor_open(ref grn_ctx ctx, ref grn_table_cursor table, System.IntPtr min, uint min_size, System.IntPtr max, uint max_size, int offset, int limit, int flags) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///tc: grn_table_cursor*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_cursor_close")]
-public static extern  grn_rc grn_table_cursor_close(ref grn_ctx ctx, ref grn_table_cursor tc) ;
+    public static extern  grn_rc grn_table_cursor_close(ref grn_ctx ctx, ref grn_table_cursor tc) ;
 
     
     /// Return Type: grn_id->unsigned int
     ///ctx: grn_ctx*
     ///tc: grn_table_cursor*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_cursor_next")]
-public static extern  uint grn_table_cursor_next(ref grn_ctx ctx, ref grn_table_cursor tc) ;
+    public static extern  uint grn_table_cursor_next(ref grn_ctx ctx, ref grn_table_cursor tc) ;
 
     
     /// Return Type: int
@@ -2000,7 +2000,7 @@ public static extern  uint grn_table_cursor_next(ref grn_ctx ctx, ref grn_table_
     ///tc: grn_table_cursor*
     ///key: void**
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_cursor_get_key")]
-public static extern  int grn_table_cursor_get_key(ref grn_ctx ctx, ref grn_table_cursor tc, ref System.IntPtr key) ;
+    public static extern  int grn_table_cursor_get_key(ref grn_ctx ctx, ref grn_table_cursor tc, ref System.IntPtr key) ;
 
     
     /// Return Type: int
@@ -2008,7 +2008,7 @@ public static extern  int grn_table_cursor_get_key(ref grn_ctx ctx, ref grn_tabl
     ///tc: grn_table_cursor*
     ///value: void**
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_cursor_get_value")]
-public static extern  int grn_table_cursor_get_value(ref grn_ctx ctx, ref grn_table_cursor tc, ref System.IntPtr value) ;
+    public static extern  int grn_table_cursor_get_value(ref grn_ctx ctx, ref grn_table_cursor tc, ref System.IntPtr value) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2017,21 +2017,21 @@ public static extern  int grn_table_cursor_get_value(ref grn_ctx ctx, ref grn_ta
     ///value: void*
     ///flags: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_cursor_set_value")]
-public static extern  grn_rc grn_table_cursor_set_value(ref grn_ctx ctx, ref grn_table_cursor tc, System.IntPtr value, int flags) ;
+    public static extern  grn_rc grn_table_cursor_set_value(ref grn_ctx ctx, ref grn_table_cursor tc, System.IntPtr value, int flags) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///tc: grn_table_cursor*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_cursor_delete")]
-public static extern  grn_rc grn_table_cursor_delete(ref grn_ctx ctx, ref grn_table_cursor tc) ;
+    public static extern  grn_rc grn_table_cursor_delete(ref grn_ctx ctx, ref grn_table_cursor tc) ;
 
     
     /// Return Type: grn_obj*
     ///ctx: grn_ctx*
     ///tc: grn_table_cursor*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_cursor_table")]
-public static extern  System.IntPtr grn_table_cursor_table(ref grn_ctx ctx, ref grn_table_cursor tc) ;
+    public static extern  System.IntPtr grn_table_cursor_table(ref grn_ctx ctx, ref grn_table_cursor tc) ;
 
     
     /// Return Type: grn_obj*
@@ -2042,7 +2042,7 @@ public static extern  System.IntPtr grn_table_cursor_table(ref grn_ctx ctx, ref 
     ///rid_max: grn_id->unsigned int
     ///flags: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_index_cursor_open")]
-public static extern  System.IntPtr grn_index_cursor_open(ref grn_ctx ctx, ref grn_table_cursor tc, ref grn_table_cursor index, uint rid_min, uint rid_max, int flags) ;
+    public static extern  System.IntPtr grn_index_cursor_open(ref grn_ctx ctx, ref grn_table_cursor tc, ref grn_table_cursor index, uint rid_min, uint rid_max, int flags) ;
 
     
     /// Return Type: grn_posting*
@@ -2050,7 +2050,7 @@ public static extern  System.IntPtr grn_index_cursor_open(ref grn_ctx ctx, ref g
     ///ic: grn_obj*
     ///tid: grn_id*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_index_cursor_next")]
-public static extern  System.IntPtr grn_index_cursor_next(ref grn_ctx ctx, ref grn_table_cursor ic, ref uint tid) ;
+    public static extern  System.IntPtr grn_index_cursor_next(ref grn_ctx ctx, ref grn_table_cursor ic, ref uint tid) ;
 
     
     /// Return Type: int
@@ -2062,7 +2062,7 @@ public static extern  System.IntPtr grn_index_cursor_next(ref grn_ctx ctx, ref g
     ///keys: grn_table_sort_key*
     ///n_keys: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_sort")]
-public static extern  int grn_table_sort(ref grn_ctx ctx, ref grn_table_cursor table, int offset, int limit, ref grn_table_cursor result, ref grn_table_sort_key keys, int n_keys) ;
+    public static extern  int grn_table_sort(ref grn_ctx ctx, ref grn_table_cursor table, int offset, int limit, ref grn_table_cursor result, ref grn_table_sort_key keys, int n_keys) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2073,7 +2073,7 @@ public static extern  int grn_table_sort(ref grn_ctx ctx, ref grn_table_cursor t
     ///results: grn_table_group_result*
     ///n_results: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_group")]
-public static extern  grn_rc grn_table_group(ref grn_ctx ctx, ref grn_table_cursor table, ref grn_table_sort_key keys, int n_keys, ref grn_table_group_result results, int n_results) ;
+    public static extern  grn_rc grn_table_group(ref grn_ctx ctx, ref grn_table_cursor table, ref grn_table_sort_key keys, int n_keys, ref grn_table_group_result results, int n_results) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2083,7 +2083,7 @@ public static extern  grn_rc grn_table_group(ref grn_ctx ctx, ref grn_table_curs
     ///res: grn_obj*
     ///op: grn_operator->Anonymous_0afd231f_39e8_44cf_9c60_faf840d89fa2
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_setoperation")]
-public static extern  grn_rc grn_table_setoperation(ref grn_ctx ctx, ref grn_table_cursor table1, ref grn_table_cursor table2, ref grn_table_cursor res, grn_operator op) ;
+    public static extern  grn_rc grn_table_setoperation(ref grn_ctx ctx, ref grn_table_cursor table1, ref grn_table_cursor table2, ref grn_table_cursor res, grn_operator op) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2093,7 +2093,7 @@ public static extern  grn_rc grn_table_setoperation(ref grn_ctx ctx, ref grn_tab
     ///res1: grn_obj*
     ///res2: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_difference")]
-public static extern  grn_rc grn_table_difference(ref grn_ctx ctx, ref grn_table_cursor table1, ref grn_table_cursor table2, ref grn_table_cursor res1, ref grn_table_cursor res2) ;
+    public static extern  grn_rc grn_table_difference(ref grn_ctx ctx, ref grn_table_cursor table1, ref grn_table_cursor table2, ref grn_table_cursor res1, ref grn_table_cursor res2) ;
 
     
     /// Return Type: int
@@ -2103,7 +2103,7 @@ public static extern  grn_rc grn_table_difference(ref grn_ctx ctx, ref grn_table
     ///name_size: unsigned int
     ///res: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_columns")]
-public static extern  int grn_table_columns(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size, ref grn_table_cursor res) ;
+    public static extern  int grn_table_columns(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size, ref grn_table_cursor res) ;
 
     
     /// Return Type: grn_obj*
@@ -2112,14 +2112,14 @@ public static extern  int grn_table_columns(ref grn_ctx ctx, ref grn_table_curso
     ///name: char*
     ///name_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_column")]
-public static extern  System.IntPtr grn_obj_column(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
+    public static extern  System.IntPtr grn_obj_column(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
 
     
     /// Return Type: unsigned int
     ///ctx: grn_ctx*
     ///table: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_size")]
-public static extern  uint grn_table_size(ref grn_ctx ctx, ref grn_table_cursor table) ;
+    public static extern  uint grn_table_size(ref grn_ctx ctx, ref grn_table_cursor table) ;
 
     
     /// Return Type: grn_obj*
@@ -2131,7 +2131,7 @@ public static extern  uint grn_table_size(ref grn_ctx ctx, ref grn_table_cursor 
     ///flags: grn_obj_flags->unsigned short
     ///type: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_column_create")]
-public static extern  System.IntPtr grn_column_create(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path, ushort flags, ref grn_table_cursor type) ;
+    public static extern  System.IntPtr grn_column_create(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path, ushort flags, ref grn_table_cursor type) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2142,14 +2142,14 @@ public static extern  System.IntPtr grn_column_create(ref grn_ctx ctx, ref grn_t
     ///oldvalue: grn_obj*
     ///newvalue: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_column_index_update")]
-public static extern  grn_rc grn_column_index_update(ref grn_ctx ctx, ref grn_table_cursor column, uint id, uint section, ref grn_table_cursor oldvalue, ref grn_table_cursor newvalue) ;
+    public static extern  grn_rc grn_column_index_update(ref grn_ctx ctx, ref grn_table_cursor column, uint id, uint section, ref grn_table_cursor oldvalue, ref grn_table_cursor newvalue) ;
 
     
     /// Return Type: grn_obj*
     ///ctx: grn_ctx*
     ///column: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_column_table")]
-public static extern  System.IntPtr grn_column_table(ref grn_ctx ctx, ref grn_table_cursor column) ;
+    public static extern  System.IntPtr grn_column_table(ref grn_ctx ctx, ref grn_table_cursor column) ;
 
     
     /// Return Type: grn_obj*
@@ -2158,7 +2158,7 @@ public static extern  System.IntPtr grn_column_table(ref grn_ctx ctx, ref grn_ta
     ///type: grn_info_type->Anonymous_b5a29555_0744_43e3_9851_2c7c40476d92
     ///valuebuf: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_get_info")]
-public static extern  System.IntPtr grn_obj_get_info(ref grn_ctx ctx, ref grn_table_cursor obj, grn_info_type type, ref grn_table_cursor valuebuf) ;
+    public static extern  System.IntPtr grn_obj_get_info(ref grn_ctx ctx, ref grn_table_cursor obj, grn_info_type type, ref grn_table_cursor valuebuf) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2167,7 +2167,7 @@ public static extern  System.IntPtr grn_obj_get_info(ref grn_ctx ctx, ref grn_ta
     ///type: grn_info_type->Anonymous_b5a29555_0744_43e3_9851_2c7c40476d92
     ///value: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_set_info")]
-public static extern  grn_rc grn_obj_set_info(ref grn_ctx ctx, ref grn_table_cursor obj, grn_info_type type, ref grn_table_cursor value) ;
+    public static extern  grn_rc grn_obj_set_info(ref grn_ctx ctx, ref grn_table_cursor obj, grn_info_type type, ref grn_table_cursor value) ;
 
     
     /// Return Type: grn_obj*
@@ -2177,7 +2177,7 @@ public static extern  grn_rc grn_obj_set_info(ref grn_ctx ctx, ref grn_table_cur
     ///type: grn_info_type->Anonymous_b5a29555_0744_43e3_9851_2c7c40476d92
     ///value: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_get_element_info")]
-public static extern  System.IntPtr grn_obj_get_element_info(ref grn_ctx ctx, ref grn_table_cursor obj, uint id, grn_info_type type, ref grn_table_cursor value) ;
+    public static extern  System.IntPtr grn_obj_get_element_info(ref grn_ctx ctx, ref grn_table_cursor obj, uint id, grn_info_type type, ref grn_table_cursor value) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2187,14 +2187,14 @@ public static extern  System.IntPtr grn_obj_get_element_info(ref grn_ctx ctx, re
     ///type: grn_info_type->Anonymous_b5a29555_0744_43e3_9851_2c7c40476d92
     ///value: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_set_element_info")]
-public static extern  grn_rc grn_obj_set_element_info(ref grn_ctx ctx, ref grn_table_cursor obj, uint id, grn_info_type type, ref grn_table_cursor value) ;
+    public static extern  grn_rc grn_obj_set_element_info(ref grn_ctx ctx, ref grn_table_cursor obj, uint id, grn_info_type type, ref grn_table_cursor value) ;
 
     
     /// Return Type: grn_bool->unsigned char
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_is_builtin")]
-public static extern  byte grn_obj_is_builtin(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  byte grn_obj_is_builtin(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: grn_obj*
@@ -2203,7 +2203,7 @@ public static extern  byte grn_obj_is_builtin(ref grn_ctx ctx, ref grn_table_cur
     ///id: grn_id->unsigned int
     ///value: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_get_value")]
-public static extern  System.IntPtr grn_obj_get_value(ref grn_ctx ctx, ref grn_table_cursor obj, uint id, ref grn_table_cursor value) ;
+    public static extern  System.IntPtr grn_obj_get_value(ref grn_ctx ctx, ref grn_table_cursor obj, uint id, ref grn_table_cursor value) ;
 
     
     /// Return Type: int
@@ -2212,7 +2212,7 @@ public static extern  System.IntPtr grn_obj_get_value(ref grn_ctx ctx, ref grn_t
     ///offset: grn_id->unsigned int
     ///values: void**
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_get_values")]
-public static extern  int grn_obj_get_values(ref grn_ctx ctx, ref grn_table_cursor obj, uint offset, ref System.IntPtr values) ;
+    public static extern  int grn_obj_get_values(ref grn_ctx ctx, ref grn_table_cursor obj, uint offset, ref System.IntPtr values) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2222,14 +2222,14 @@ public static extern  int grn_obj_get_values(ref grn_ctx ctx, ref grn_table_curs
     ///value: grn_obj*
     ///flags: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_set_value")]
-public static extern  grn_rc grn_obj_set_value(ref grn_ctx ctx, ref grn_table_cursor obj, uint id, ref grn_table_cursor value, int flags) ;
+    public static extern  grn_rc grn_obj_set_value(ref grn_ctx ctx, ref grn_table_cursor obj, uint id, ref grn_table_cursor value, int flags) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_remove")]
-public static extern  grn_rc grn_obj_remove(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  grn_rc grn_obj_remove(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2238,7 +2238,7 @@ public static extern  grn_rc grn_obj_remove(ref grn_ctx ctx, ref grn_table_curso
     ///name: char*
     ///name_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_rename")]
-public static extern  grn_rc grn_obj_rename(ref grn_ctx ctx, ref grn_table_cursor obj, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
+    public static extern  grn_rc grn_obj_rename(ref grn_ctx ctx, ref grn_table_cursor obj, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2247,7 +2247,7 @@ public static extern  grn_rc grn_obj_rename(ref grn_ctx ctx, ref grn_table_curso
     ///name: char*
     ///name_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_rename")]
-public static extern  grn_rc grn_table_rename(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
+    public static extern  grn_rc grn_table_rename(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2256,14 +2256,14 @@ public static extern  grn_rc grn_table_rename(ref grn_ctx ctx, ref grn_table_cur
     ///name: char*
     ///name_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_column_rename")]
-public static extern  grn_rc grn_column_rename(ref grn_ctx ctx, ref grn_table_cursor column, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
+    public static extern  grn_rc grn_column_rename(ref grn_ctx ctx, ref grn_table_cursor column, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_close")]
-public static extern  grn_rc grn_obj_close(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  grn_rc grn_obj_close(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2272,21 +2272,21 @@ public static extern  grn_rc grn_obj_close(ref grn_ctx ctx, ref grn_table_cursor
     ///domain: grn_id->unsigned int
     ///flags: unsigned char
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_reinit")]
-public static extern  grn_rc grn_obj_reinit(ref grn_ctx ctx, ref grn_table_cursor obj, uint domain, byte flags) ;
+    public static extern  grn_rc grn_obj_reinit(ref grn_ctx ctx, ref grn_table_cursor obj, uint domain, byte flags) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_unlink")]
-public static extern  void grn_obj_unlink(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  void grn_obj_unlink(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: grn_user_data*
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_user_data")]
-public static extern  System.IntPtr grn_obj_user_data(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  System.IntPtr grn_obj_user_data(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2294,14 +2294,14 @@ public static extern  System.IntPtr grn_obj_user_data(ref grn_ctx ctx, ref grn_t
     ///obj: grn_obj*
     ///func: grn_proc_func*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_set_finalizer")]
-public static extern  grn_rc grn_obj_set_finalizer(ref grn_ctx ctx, ref grn_table_cursor obj, ref grn_proc_func func) ;
+    public static extern  grn_rc grn_obj_set_finalizer(ref grn_ctx ctx, ref grn_table_cursor obj, ref grn_proc_func func) ;
 
     
     /// Return Type: char*
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_path")]
-public static extern  System.IntPtr grn_obj_path(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  System.IntPtr grn_obj_path(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: int
@@ -2310,7 +2310,7 @@ public static extern  System.IntPtr grn_obj_path(ref grn_ctx ctx, ref grn_table_
     ///namebuf: char*
     ///buf_size: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_name")]
-public static extern  int grn_obj_name(ref grn_ctx ctx, ref grn_table_cursor obj, System.IntPtr namebuf, int buf_size) ;
+    public static extern  int grn_obj_name(ref grn_ctx ctx, ref grn_table_cursor obj, System.IntPtr namebuf, int buf_size) ;
 
     
     /// Return Type: int
@@ -2319,14 +2319,14 @@ public static extern  int grn_obj_name(ref grn_ctx ctx, ref grn_table_cursor obj
     ///namebuf: char*
     ///buf_size: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_column_name")]
-public static extern  int grn_column_name(ref grn_ctx ctx, ref grn_table_cursor obj, System.IntPtr namebuf, int buf_size) ;
+    public static extern  int grn_column_name(ref grn_ctx ctx, ref grn_table_cursor obj, System.IntPtr namebuf, int buf_size) ;
 
     
     /// Return Type: grn_id->unsigned int
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_get_range")]
-public static extern  uint grn_obj_get_range(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  uint grn_obj_get_range(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: int
@@ -2334,14 +2334,14 @@ public static extern  uint grn_obj_get_range(ref grn_ctx ctx, ref grn_table_curs
     ///obj: grn_obj*
     ///threshold: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_expire")]
-public static extern  int grn_obj_expire(ref grn_ctx ctx, ref grn_table_cursor obj, int threshold) ;
+    public static extern  int grn_obj_expire(ref grn_ctx ctx, ref grn_table_cursor obj, int threshold) ;
 
     
     /// Return Type: int
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_check")]
-public static extern  int grn_obj_check(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  int grn_obj_check(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2350,7 +2350,7 @@ public static extern  int grn_obj_check(ref grn_ctx ctx, ref grn_table_cursor ob
     ///id: grn_id->unsigned int
     ///timeout: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_lock")]
-public static extern  grn_rc grn_obj_lock(ref grn_ctx ctx, ref grn_table_cursor obj, uint id, int timeout) ;
+    public static extern  grn_rc grn_obj_lock(ref grn_ctx ctx, ref grn_table_cursor obj, uint id, int timeout) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2358,21 +2358,21 @@ public static extern  grn_rc grn_obj_lock(ref grn_ctx ctx, ref grn_table_cursor 
     ///obj: grn_obj*
     ///id: grn_id->unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_unlock")]
-public static extern  grn_rc grn_obj_unlock(ref grn_ctx ctx, ref grn_table_cursor obj, uint id) ;
+    public static extern  grn_rc grn_obj_unlock(ref grn_ctx ctx, ref grn_table_cursor obj, uint id) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_clear_lock")]
-public static extern  grn_rc grn_obj_clear_lock(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  grn_rc grn_obj_clear_lock(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: unsigned int
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_is_locked")]
-public static extern  uint grn_obj_is_locked(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  uint grn_obj_is_locked(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: int
@@ -2380,21 +2380,21 @@ public static extern  uint grn_obj_is_locked(ref grn_ctx ctx, ref grn_table_curs
     ///obj: grn_obj*
     ///threshold: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_defrag")]
-public static extern  int grn_obj_defrag(ref grn_ctx ctx, ref grn_table_cursor obj, int threshold) ;
+    public static extern  int grn_obj_defrag(ref grn_ctx ctx, ref grn_table_cursor obj, int threshold) ;
 
     
     /// Return Type: grn_obj*
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_db")]
-public static extern  System.IntPtr grn_obj_db(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  System.IntPtr grn_obj_db(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: grn_id->unsigned int
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_id")]
-public static extern  uint grn_obj_id(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  uint grn_obj_id(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2405,7 +2405,7 @@ public static extern  uint grn_obj_id(ref grn_ctx ctx, ref grn_table_cursor obj)
     ///op: grn_operator->Anonymous_0afd231f_39e8_44cf_9c60_faf840d89fa2
     ///optarg: grn_search_optarg*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_search")]
-public static extern  grn_rc grn_obj_search(ref grn_ctx ctx, ref grn_table_cursor obj, ref grn_table_cursor query, ref grn_table_cursor res, grn_operator op, ref grn_search_optarg optarg) ;
+    public static extern  grn_rc grn_obj_search(ref grn_ctx ctx, ref grn_table_cursor obj, ref grn_table_cursor query, ref grn_table_cursor res, grn_operator op, ref grn_search_optarg optarg) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2413,14 +2413,14 @@ public static extern  grn_rc grn_obj_search(ref grn_ctx ctx, ref grn_table_curso
     ///proc: grn_obj*
     ///selector: grn_selector_func
     [DllImportAttribute("groonga.dll", EntryPoint="grn_proc_set_selector")]
-public static extern  grn_rc grn_proc_set_selector(ref grn_ctx ctx, ref grn_table_cursor proc, grn_selector_func selector) ;
+    public static extern  grn_rc grn_proc_set_selector(ref grn_ctx ctx, ref grn_table_cursor proc, grn_selector_func selector) ;
 
     
     /// Return Type: unsigned int
     ///ctx: grn_ctx*
     ///vector: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_vector_size")]
-public static extern  uint grn_vector_size(ref grn_ctx ctx, ref grn_table_cursor vector) ;
+    public static extern  uint grn_vector_size(ref grn_ctx ctx, ref grn_table_cursor vector) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2431,7 +2431,7 @@ public static extern  uint grn_vector_size(ref grn_ctx ctx, ref grn_table_cursor
     ///weight: unsigned int
     ///domain: grn_id->unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_vector_add_element")]
-public static extern  grn_rc grn_vector_add_element(ref grn_ctx ctx, ref grn_table_cursor vector, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_len, uint weight, uint domain) ;
+    public static extern  grn_rc grn_vector_add_element(ref grn_ctx ctx, ref grn_table_cursor vector, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_len, uint weight, uint domain) ;
 
     
     /// Return Type: unsigned int
@@ -2442,14 +2442,14 @@ public static extern  grn_rc grn_vector_add_element(ref grn_ctx ctx, ref grn_tab
     ///weight: unsigned int*
     ///domain: grn_id*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_vector_get_element")]
-public static extern  uint grn_vector_get_element(ref grn_ctx ctx, ref grn_table_cursor vector, uint offset, ref System.IntPtr str, ref uint weight, ref uint domain) ;
+    public static extern  uint grn_vector_get_element(ref grn_ctx ctx, ref grn_table_cursor vector, uint offset, ref System.IntPtr str, ref uint weight, ref uint domain) ;
 
     
     /// Return Type: unsigned int
     ///ctx: grn_ctx*
     ///uvector: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_uvector_size")]
-public static extern  uint grn_uvector_size(ref grn_ctx ctx, ref grn_table_cursor uvector) ;
+    public static extern  uint grn_uvector_size(ref grn_ctx ctx, ref grn_table_cursor uvector) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2458,7 +2458,7 @@ public static extern  uint grn_uvector_size(ref grn_ctx ctx, ref grn_table_curso
     ///id: grn_id->unsigned int
     ///weight: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_uvector_add_element")]
-public static extern  grn_rc grn_uvector_add_element(ref grn_ctx ctx, ref grn_table_cursor vector, uint id, uint weight) ;
+    public static extern  grn_rc grn_uvector_add_element(ref grn_ctx ctx, ref grn_table_cursor vector, uint id, uint weight) ;
 
     
     /// Return Type: grn_id->unsigned int
@@ -2467,7 +2467,7 @@ public static extern  grn_rc grn_uvector_add_element(ref grn_ctx ctx, ref grn_ta
     ///offset: unsigned int
     ///weight: unsigned int*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_uvector_get_element")]
-public static extern  uint grn_uvector_get_element(ref grn_ctx ctx, ref grn_table_cursor uvector, uint offset, ref uint weight) ;
+    public static extern  uint grn_uvector_get_element(ref grn_ctx ctx, ref grn_table_cursor uvector, uint offset, ref uint weight) ;
 
     
     /// Return Type: int
@@ -2476,21 +2476,21 @@ public static extern  uint grn_uvector_get_element(ref grn_ctx ctx, ref grn_tabl
     ///in: grn_obj*
     ///out: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_proc_call_next")]
-public static extern  int grn_proc_call_next(ref grn_ctx ctx, ref grn_table_cursor exec_info, ref grn_table_cursor @in, ref grn_table_cursor @out) ;
+    public static extern  int grn_proc_call_next(ref grn_ctx ctx, ref grn_table_cursor exec_info, ref grn_table_cursor @in, ref grn_table_cursor @out) ;
 
     
     /// Return Type: void*
     ///ctx: grn_ctx*
     ///exec_info: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_proc_get_ctx_local_data")]
-public static extern  System.IntPtr grn_proc_get_ctx_local_data(ref grn_ctx ctx, ref grn_table_cursor exec_info) ;
+    public static extern  System.IntPtr grn_proc_get_ctx_local_data(ref grn_ctx ctx, ref grn_table_cursor exec_info) ;
 
     
     /// Return Type: void*
     ///ctx: grn_ctx*
     ///exec_info: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_proc_get_hook_local_data")]
-public static extern  System.IntPtr grn_proc_get_hook_local_data(ref grn_ctx ctx, ref grn_table_cursor exec_info) ;
+    public static extern  System.IntPtr grn_proc_get_hook_local_data(ref grn_ctx ctx, ref grn_table_cursor exec_info) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2501,7 +2501,7 @@ public static extern  System.IntPtr grn_proc_get_hook_local_data(ref grn_ctx ctx
     ///proc: grn_obj*
     ///data: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_add_hook")]
-public static extern  grn_rc grn_obj_add_hook(ref grn_ctx ctx, ref grn_table_cursor obj, grn_hook_entry entry, int offset, ref grn_table_cursor proc, ref grn_table_cursor data) ;
+    public static extern  grn_rc grn_obj_add_hook(ref grn_ctx ctx, ref grn_table_cursor obj, grn_hook_entry entry, int offset, ref grn_table_cursor proc, ref grn_table_cursor data) ;
 
     
     /// Return Type: int
@@ -2509,7 +2509,7 @@ public static extern  grn_rc grn_obj_add_hook(ref grn_ctx ctx, ref grn_table_cur
     ///obj: grn_obj*
     ///entry: grn_hook_entry->Anonymous_0316ed98_e498_48dc_b3e5_e1b980ac0438
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_get_nhooks")]
-public static extern  int grn_obj_get_nhooks(ref grn_ctx ctx, ref grn_table_cursor obj, grn_hook_entry entry) ;
+    public static extern  int grn_obj_get_nhooks(ref grn_ctx ctx, ref grn_table_cursor obj, grn_hook_entry entry) ;
 
     
     /// Return Type: grn_obj*
@@ -2519,7 +2519,7 @@ public static extern  int grn_obj_get_nhooks(ref grn_ctx ctx, ref grn_table_curs
     ///offset: int
     ///data: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_get_hook")]
-public static extern  System.IntPtr grn_obj_get_hook(ref grn_ctx ctx, ref grn_table_cursor obj, grn_hook_entry entry, int offset, ref grn_table_cursor data) ;
+    public static extern  System.IntPtr grn_obj_get_hook(ref grn_ctx ctx, ref grn_table_cursor obj, grn_hook_entry entry, int offset, ref grn_table_cursor data) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2528,7 +2528,7 @@ public static extern  System.IntPtr grn_obj_get_hook(ref grn_ctx ctx, ref grn_ta
     ///entry: grn_hook_entry->Anonymous_0316ed98_e498_48dc_b3e5_e1b980ac0438
     ///offset: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_delete_hook")]
-public static extern  grn_rc grn_obj_delete_hook(ref grn_ctx ctx, ref grn_table_cursor obj, grn_hook_entry entry, int offset) ;
+    public static extern  grn_rc grn_obj_delete_hook(ref grn_ctx ctx, ref grn_table_cursor obj, grn_hook_entry entry, int offset) ;
 
     
     /// Return Type: grn_obj*
@@ -2537,7 +2537,7 @@ public static extern  grn_rc grn_obj_delete_hook(ref grn_ctx ctx, ref grn_table_
     ///flags: grn_obj_flags->unsigned short
     ///domain: grn_id->unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_open")]
-public static extern  System.IntPtr grn_obj_open(ref grn_ctx ctx, byte type, ushort flags, uint domain) ;
+    public static extern  System.IntPtr grn_obj_open(ref grn_ctx ctx, byte type, ushort flags, uint domain) ;
 
     
     /// Return Type: int
@@ -2548,7 +2548,7 @@ public static extern  System.IntPtr grn_obj_open(ref grn_ctx ctx, byte type, ush
     ///buf_size: int
     ///section: int*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_column_index")]
-public static extern  int grn_column_index(ref grn_ctx ctx, ref grn_table_cursor column, grn_operator op, ref System.IntPtr indexbuf, int buf_size, ref int section) ;
+    public static extern  int grn_column_index(ref grn_ctx ctx, ref grn_table_cursor column, grn_operator op, ref System.IntPtr indexbuf, int buf_size, ref int section) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2557,7 +2557,7 @@ public static extern  int grn_column_index(ref grn_ctx ctx, ref grn_table_cursor
     ///id: grn_id->unsigned int
     ///removep: grn_bool->unsigned char
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_delete_by_id")]
-public static extern  grn_rc grn_obj_delete_by_id(ref grn_ctx ctx, ref grn_table_cursor db, uint id, byte removep) ;
+    public static extern  grn_rc grn_obj_delete_by_id(ref grn_ctx ctx, ref grn_table_cursor db, uint id, byte removep) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2566,7 +2566,7 @@ public static extern  grn_rc grn_obj_delete_by_id(ref grn_ctx ctx, ref grn_table
     ///id: grn_id->unsigned int
     ///buffer: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_path_by_id")]
-public static extern  grn_rc grn_obj_path_by_id(ref grn_ctx ctx, ref grn_table_cursor db, uint id, System.IntPtr buffer) ;
+    public static extern  grn_rc grn_obj_path_by_id(ref grn_ctx ctx, ref grn_table_cursor db, uint id, System.IntPtr buffer) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2577,7 +2577,7 @@ public static extern  grn_rc grn_obj_path_by_id(ref grn_ctx ctx, ref grn_table_c
     ///res: grn_obj*
     ///op: grn_operator->Anonymous_0afd231f_39e8_44cf_9c60_faf840d89fa2
     [DllImportAttribute("groonga.dll", EntryPoint="grn_geo_select_in_rectangle")]
-public static extern  grn_rc grn_geo_select_in_rectangle(ref grn_ctx ctx, ref grn_table_cursor index, ref grn_table_cursor top_left_point, ref grn_table_cursor bottom_right_point, ref grn_table_cursor res, grn_operator op) ;
+    public static extern  grn_rc grn_geo_select_in_rectangle(ref grn_ctx ctx, ref grn_table_cursor index, ref grn_table_cursor top_left_point, ref grn_table_cursor bottom_right_point, ref grn_table_cursor res, grn_operator op) ;
 
     
     /// Return Type: int
@@ -2586,7 +2586,7 @@ public static extern  grn_rc grn_geo_select_in_rectangle(ref grn_ctx ctx, ref gr
     ///top_left_point: grn_obj*
     ///bottom_right_point: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_geo_estimate_in_rectangle")]
-public static extern  int grn_geo_estimate_in_rectangle(ref grn_ctx ctx, ref grn_table_cursor index, ref grn_table_cursor top_left_point, ref grn_table_cursor bottom_right_point) ;
+    public static extern  int grn_geo_estimate_in_rectangle(ref grn_ctx ctx, ref grn_table_cursor index, ref grn_table_cursor top_left_point, ref grn_table_cursor bottom_right_point) ;
 
     
     /// Return Type: grn_obj*
@@ -2597,14 +2597,14 @@ public static extern  int grn_geo_estimate_in_rectangle(ref grn_ctx ctx, ref grn
     ///offset: int
     ///limit: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_geo_cursor_open_in_rectangle")]
-public static extern  System.IntPtr grn_geo_cursor_open_in_rectangle(ref grn_ctx ctx, ref grn_table_cursor index, ref grn_table_cursor top_left_point, ref grn_table_cursor bottom_right_point, int offset, int limit) ;
+    public static extern  System.IntPtr grn_geo_cursor_open_in_rectangle(ref grn_ctx ctx, ref grn_table_cursor index, ref grn_table_cursor top_left_point, ref grn_table_cursor bottom_right_point, int offset, int limit) ;
 
     
     /// Return Type: grn_posting*
     ///ctx: grn_ctx*
     ///cursor: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_geo_cursor_next")]
-public static extern  System.IntPtr grn_geo_cursor_next(ref grn_ctx ctx, ref grn_table_cursor cursor) ;
+    public static extern  System.IntPtr grn_geo_cursor_next(ref grn_ctx ctx, ref grn_table_cursor cursor) ;
 
     
     /// Return Type: grn_obj*
@@ -2618,7 +2618,7 @@ public static extern  System.IntPtr grn_geo_cursor_next(ref grn_ctx ctx, ref grn
     ///defaultclosetag_len: unsigned int
     ///mapping: grn_snip_mapping*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_snip_open")]
-public static extern  System.IntPtr grn_snip_open(ref grn_ctx ctx, int flags, uint width, uint max_results, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string defaultopentag, uint defaultopentag_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string defaultclosetag, uint defaultclosetag_len, ref grn_snip_mapping mapping) ;
+    public static extern  System.IntPtr grn_snip_open(ref grn_ctx ctx, int flags, uint width, uint max_results, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string defaultopentag, uint defaultopentag_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string defaultclosetag, uint defaultclosetag_len, ref grn_snip_mapping mapping) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2631,7 +2631,7 @@ public static extern  System.IntPtr grn_snip_open(ref grn_ctx ctx, int flags, ui
     ///closetag: char*
     ///closetag_len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_snip_add_cond")]
-public static extern  grn_rc grn_snip_add_cond(ref grn_ctx ctx, ref grn_table_cursor snip, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string keyword, uint keyword_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string opentag, uint opentag_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string closetag, uint closetag_len) ;
+    public static extern  grn_rc grn_snip_add_cond(ref grn_ctx ctx, ref grn_table_cursor snip, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string keyword, uint keyword_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string opentag, uint opentag_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string closetag, uint closetag_len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2639,14 +2639,14 @@ public static extern  grn_rc grn_snip_add_cond(ref grn_ctx ctx, ref grn_table_cu
     ///snip: grn_obj*
     ///normalizer: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_snip_set_normalizer")]
-public static extern  grn_rc grn_snip_set_normalizer(ref grn_ctx ctx, ref grn_table_cursor snip, ref grn_table_cursor normalizer) ;
+    public static extern  grn_rc grn_snip_set_normalizer(ref grn_ctx ctx, ref grn_table_cursor snip, ref grn_table_cursor normalizer) ;
 
     
     /// Return Type: grn_obj*
     ///ctx: grn_ctx*
     ///snip: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_snip_get_normalizer")]
-public static extern  System.IntPtr grn_snip_get_normalizer(ref grn_ctx ctx, ref grn_table_cursor snip) ;
+    public static extern  System.IntPtr grn_snip_get_normalizer(ref grn_ctx ctx, ref grn_table_cursor snip) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2657,7 +2657,7 @@ public static extern  System.IntPtr grn_snip_get_normalizer(ref grn_ctx ctx, ref
     ///nresults: unsigned int*
     ///max_tagged_len: unsigned int*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_snip_exec")]
-public static extern  grn_rc grn_snip_exec(ref grn_ctx ctx, ref grn_table_cursor snip, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string @string, uint string_len, ref uint nresults, ref uint max_tagged_len) ;
+    public static extern  grn_rc grn_snip_exec(ref grn_ctx ctx, ref grn_table_cursor snip, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string @string, uint string_len, ref uint nresults, ref uint max_tagged_len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2667,111 +2667,111 @@ public static extern  grn_rc grn_snip_exec(ref grn_ctx ctx, ref grn_table_cursor
     ///result: char*
     ///result_len: unsigned int*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_snip_get_result")]
-public static extern  grn_rc grn_snip_get_result(ref grn_ctx ctx, ref grn_table_cursor snip, int index, System.IntPtr result, ref uint result_len) ;
+    public static extern  grn_rc grn_snip_get_result(ref grn_ctx ctx, ref grn_table_cursor snip, int index, System.IntPtr result, ref uint result_len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///info: grn_logger_info*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_logger_info_set")]
-public static extern  grn_rc grn_logger_info_set(ref grn_ctx ctx, ref grn_logger_info info) ;
+    public static extern  grn_rc grn_logger_info_set(ref grn_ctx ctx, ref grn_logger_info info) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///logger: grn_logger*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_logger_set")]
-public static extern  grn_rc grn_logger_set(ref grn_ctx ctx, ref grn_logger logger) ;
+    public static extern  grn_rc grn_logger_set(ref grn_ctx ctx, ref grn_logger logger) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     ///max_level: grn_log_level->Anonymous_1ceaa881_6549_4381_9e76_6c322e07a4ce
     [DllImportAttribute("groonga.dll", EntryPoint="grn_logger_set_max_level")]
-public static extern  void grn_logger_set_max_level(ref grn_ctx ctx, grn_log_level max_level) ;
+    public static extern  void grn_logger_set_max_level(ref grn_ctx ctx, grn_log_level max_level) ;
 
     
     /// Return Type: grn_log_level->Anonymous_1ceaa881_6549_4381_9e76_6c322e07a4ce
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_logger_get_max_level")]
-public static extern  grn_log_level grn_logger_get_max_level(ref grn_ctx ctx) ;
+    public static extern  grn_log_level grn_logger_get_max_level(ref grn_ctx ctx) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_logger_reopen")]
-public static extern  void grn_logger_reopen(ref grn_ctx ctx) ;
+    public static extern  void grn_logger_reopen(ref grn_ctx ctx) ;
 
     
     /// Return Type: grn_bool->unsigned char
     ///ctx: grn_ctx*
     ///level: grn_log_level->Anonymous_1ceaa881_6549_4381_9e76_6c322e07a4ce
     [DllImportAttribute("groonga.dll", EntryPoint="grn_logger_pass")]
-public static extern  byte grn_logger_pass(ref grn_ctx ctx, grn_log_level level) ;
+    public static extern  byte grn_logger_pass(ref grn_ctx ctx, grn_log_level level) ;
 
     
     /// Return Type: void
     ///level: grn_log_level->Anonymous_1ceaa881_6549_4381_9e76_6c322e07a4ce
     [DllImportAttribute("groonga.dll", EntryPoint="grn_default_logger_set_max_level")]
-public static extern  void grn_default_logger_set_max_level(grn_log_level level) ;
+    public static extern  void grn_default_logger_set_max_level(grn_log_level level) ;
 
     
     /// Return Type: grn_log_level->Anonymous_1ceaa881_6549_4381_9e76_6c322e07a4ce
     [DllImportAttribute("groonga.dll", EntryPoint="grn_default_logger_get_max_level")]
-public static extern  grn_log_level grn_default_logger_get_max_level() ;
+    public static extern  grn_log_level grn_default_logger_get_max_level() ;
 
     
     /// Return Type: void
     ///path: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_default_logger_set_path")]
-public static extern  void grn_default_logger_set_path([InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
+    public static extern  void grn_default_logger_set_path([InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
 
     
     /// Return Type: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_default_logger_get_path")]
-public static extern  System.IntPtr grn_default_logger_get_path() ;
+    public static extern  System.IntPtr grn_default_logger_get_path() ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///logger: grn_query_logger*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_query_logger_set")]
-public static extern  grn_rc grn_query_logger_set(ref grn_ctx ctx, ref grn_query_logger logger) ;
+    public static extern  grn_rc grn_query_logger_set(ref grn_ctx ctx, ref grn_query_logger logger) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_query_logger_reopen")]
-public static extern  void grn_query_logger_reopen(ref grn_ctx ctx) ;
+    public static extern  void grn_query_logger_reopen(ref grn_ctx ctx) ;
 
     
     /// Return Type: grn_bool->unsigned char
     ///ctx: grn_ctx*
     ///flag: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_query_logger_pass")]
-public static extern  byte grn_query_logger_pass(ref grn_ctx ctx, uint flag) ;
+    public static extern  byte grn_query_logger_pass(ref grn_ctx ctx, uint flag) ;
 
     
     /// Return Type: void
     ///flags: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_default_query_logger_set_flags")]
-public static extern  void grn_default_query_logger_set_flags(uint flags) ;
+    public static extern  void grn_default_query_logger_set_flags(uint flags) ;
 
     
     /// Return Type: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_default_query_logger_get_flags")]
-public static extern  uint grn_default_query_logger_get_flags() ;
+    public static extern  uint grn_default_query_logger_get_flags() ;
 
     
     /// Return Type: void
     ///path: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_default_query_logger_set_path")]
-public static extern  void grn_default_query_logger_set_path([InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
+    public static extern  void grn_default_query_logger_set_path([InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
 
     
     /// Return Type: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_default_query_logger_get_path")]
-public static extern  System.IntPtr grn_default_query_logger_get_path() ;
+    public static extern  System.IntPtr grn_default_query_logger_get_path() ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2779,7 +2779,7 @@ public static extern  System.IntPtr grn_default_query_logger_get_path() ;
     ///bulk: grn_obj*
     ///size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_bulk_reinit")]
-public static extern  grn_rc grn_bulk_reinit(ref grn_ctx ctx, ref grn_table_cursor bulk, uint size) ;
+    public static extern  grn_rc grn_bulk_reinit(ref grn_ctx ctx, ref grn_table_cursor bulk, uint size) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2787,7 +2787,7 @@ public static extern  grn_rc grn_bulk_reinit(ref grn_ctx ctx, ref grn_table_curs
     ///bulk: grn_obj*
     ///newsize: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_bulk_resize")]
-public static extern  grn_rc grn_bulk_resize(ref grn_ctx ctx, ref grn_table_cursor bulk, uint newsize) ;
+    public static extern  grn_rc grn_bulk_resize(ref grn_ctx ctx, ref grn_table_cursor bulk, uint newsize) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2796,7 +2796,7 @@ public static extern  grn_rc grn_bulk_resize(ref grn_ctx ctx, ref grn_table_curs
     ///str: char*
     ///len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_bulk_write")]
-public static extern  grn_rc grn_bulk_write(ref grn_ctx ctx, ref grn_table_cursor bulk, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint len) ;
+    public static extern  grn_rc grn_bulk_write(ref grn_ctx ctx, ref grn_table_cursor bulk, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2806,7 +2806,7 @@ public static extern  grn_rc grn_bulk_write(ref grn_ctx ctx, ref grn_table_curso
     ///from: unsigned int
     ///len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_bulk_write_from")]
-public static extern  grn_rc grn_bulk_write_from(ref grn_ctx ctx, ref grn_table_cursor bulk, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint from, uint len) ;
+    public static extern  grn_rc grn_bulk_write_from(ref grn_ctx ctx, ref grn_table_cursor bulk, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint from, uint len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2814,7 +2814,7 @@ public static extern  grn_rc grn_bulk_write_from(ref grn_ctx ctx, ref grn_table_
     ///bulk: grn_obj*
     ///len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_bulk_reserve")]
-public static extern  grn_rc grn_bulk_reserve(ref grn_ctx ctx, ref grn_table_cursor bulk, uint len) ;
+    public static extern  grn_rc grn_bulk_reserve(ref grn_ctx ctx, ref grn_table_cursor bulk, uint len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2822,7 +2822,7 @@ public static extern  grn_rc grn_bulk_reserve(ref grn_ctx ctx, ref grn_table_cur
     ///bulk: grn_obj*
     ///len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_bulk_space")]
-public static extern  grn_rc grn_bulk_space(ref grn_ctx ctx, ref grn_table_cursor bulk, uint len) ;
+    public static extern  grn_rc grn_bulk_space(ref grn_ctx ctx, ref grn_table_cursor bulk, uint len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2830,14 +2830,14 @@ public static extern  grn_rc grn_bulk_space(ref grn_ctx ctx, ref grn_table_curso
     ///bulk: grn_obj*
     ///len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_bulk_truncate")]
-public static extern  grn_rc grn_bulk_truncate(ref grn_ctx ctx, ref grn_table_cursor bulk, uint len) ;
+    public static extern  grn_rc grn_bulk_truncate(ref grn_ctx ctx, ref grn_table_cursor bulk, uint len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///bulk: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_bulk_fin")]
-public static extern  grn_rc grn_bulk_fin(ref grn_ctx ctx, ref grn_table_cursor bulk) ;
+    public static extern  grn_rc grn_bulk_fin(ref grn_ctx ctx, ref grn_table_cursor bulk) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2845,7 +2845,7 @@ public static extern  grn_rc grn_bulk_fin(ref grn_ctx ctx, ref grn_table_cursor 
     ///bulk: grn_obj*
     ///i: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_itoa")]
-public static extern  grn_rc grn_text_itoa(ref grn_ctx ctx, ref grn_table_cursor bulk, int i) ;
+    public static extern  grn_rc grn_text_itoa(ref grn_ctx ctx, ref grn_table_cursor bulk, int i) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2855,7 +2855,7 @@ public static extern  grn_rc grn_text_itoa(ref grn_ctx ctx, ref grn_table_cursor
     ///ch: char
     ///len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_itoa_padded")]
-public static extern  grn_rc grn_text_itoa_padded(ref grn_ctx ctx, ref grn_table_cursor bulk, int i, byte ch, uint len) ;
+    public static extern  grn_rc grn_text_itoa_padded(ref grn_ctx ctx, ref grn_table_cursor bulk, int i, byte ch, uint len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2864,7 +2864,7 @@ public static extern  grn_rc grn_text_itoa_padded(ref grn_ctx ctx, ref grn_table
     ///param2: int
     ///i: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_lltoa")]
-public static extern  grn_rc grn_text_lltoa(ref grn_ctx ctx, ref grn_table_cursor bulk, int param2, int i) ;
+    public static extern  grn_rc grn_text_lltoa(ref grn_ctx ctx, ref grn_table_cursor bulk, int param2, int i) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2872,7 +2872,7 @@ public static extern  grn_rc grn_text_lltoa(ref grn_ctx ctx, ref grn_table_curso
     ///bulk: grn_obj*
     ///d: double
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_ftoa")]
-public static extern  grn_rc grn_text_ftoa(ref grn_ctx ctx, ref grn_table_cursor bulk, double d) ;
+    public static extern  grn_rc grn_text_ftoa(ref grn_ctx ctx, ref grn_table_cursor bulk, double d) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2881,7 +2881,7 @@ public static extern  grn_rc grn_text_ftoa(ref grn_ctx ctx, ref grn_table_cursor
     ///i: int
     ///len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_itoh")]
-public static extern  grn_rc grn_text_itoh(ref grn_ctx ctx, ref grn_table_cursor bulk, int i, uint len) ;
+    public static extern  grn_rc grn_text_itoh(ref grn_ctx ctx, ref grn_table_cursor bulk, int i, uint len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2889,7 +2889,7 @@ public static extern  grn_rc grn_text_itoh(ref grn_ctx ctx, ref grn_table_cursor
     ///bulk: grn_obj*
     ///id: grn_id->unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_itob")]
-public static extern  grn_rc grn_text_itob(ref grn_ctx ctx, ref grn_table_cursor bulk, uint id) ;
+    public static extern  grn_rc grn_text_itob(ref grn_ctx ctx, ref grn_table_cursor bulk, uint id) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2898,7 +2898,7 @@ public static extern  grn_rc grn_text_itob(ref grn_ctx ctx, ref grn_table_cursor
     ///param2: int
     ///i: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_lltob32h")]
-public static extern  grn_rc grn_text_lltob32h(ref grn_ctx ctx, ref grn_table_cursor bulk, int param2, int i) ;
+    public static extern  grn_rc grn_text_lltob32h(ref grn_ctx ctx, ref grn_table_cursor bulk, int param2, int i) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2906,7 +2906,7 @@ public static extern  grn_rc grn_text_lltob32h(ref grn_ctx ctx, ref grn_table_cu
     ///bulk: grn_obj*
     ///v: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_benc")]
-public static extern  grn_rc grn_text_benc(ref grn_ctx ctx, ref grn_table_cursor bulk, uint v) ;
+    public static extern  grn_rc grn_text_benc(ref grn_ctx ctx, ref grn_table_cursor bulk, uint v) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2915,7 +2915,7 @@ public static extern  grn_rc grn_text_benc(ref grn_ctx ctx, ref grn_table_cursor
     ///s: char*
     ///len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_esc")]
-public static extern  grn_rc grn_text_esc(ref grn_ctx ctx, ref grn_table_cursor bulk, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string s, uint len) ;
+    public static extern  grn_rc grn_text_esc(ref grn_ctx ctx, ref grn_table_cursor bulk, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string s, uint len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2924,7 +2924,7 @@ public static extern  grn_rc grn_text_esc(ref grn_ctx ctx, ref grn_table_cursor 
     ///str: char*
     ///len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_urlenc")]
-public static extern  grn_rc grn_text_urlenc(ref grn_ctx ctx, ref grn_table_cursor buf, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint len) ;
+    public static extern  grn_rc grn_text_urlenc(ref grn_ctx ctx, ref grn_table_cursor buf, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint len) ;
 
     
     /// Return Type: char*
@@ -2934,7 +2934,7 @@ public static extern  grn_rc grn_text_urlenc(ref grn_ctx ctx, ref grn_table_curs
     ///e: char*
     ///d: char
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_urldec")]
-public static extern  System.IntPtr grn_text_urldec(ref grn_ctx ctx, ref grn_table_cursor buf, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string s, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string e, byte d) ;
+    public static extern  System.IntPtr grn_text_urldec(ref grn_ctx ctx, ref grn_table_cursor buf, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string s, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string e, byte d) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2943,7 +2943,7 @@ public static extern  System.IntPtr grn_text_urldec(ref grn_ctx ctx, ref grn_tab
     ///s: char*
     ///len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_escape_xml")]
-public static extern  grn_rc grn_text_escape_xml(ref grn_ctx ctx, ref grn_table_cursor buf, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string s, uint len) ;
+    public static extern  grn_rc grn_text_escape_xml(ref grn_ctx ctx, ref grn_table_cursor buf, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string s, uint len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2951,7 +2951,7 @@ public static extern  grn_rc grn_text_escape_xml(ref grn_ctx ctx, ref grn_table_
     ///bulk: grn_obj*
     ///sec: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_time2rfc1123")]
-public static extern  grn_rc grn_text_time2rfc1123(ref grn_ctx ctx, ref grn_table_cursor bulk, int sec) ;
+    public static extern  grn_rc grn_text_time2rfc1123(ref grn_ctx ctx, ref grn_table_cursor bulk, int sec) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -2960,7 +2960,7 @@ public static extern  grn_rc grn_text_time2rfc1123(ref grn_ctx ctx, ref grn_tabl
     ///format: char*
     ///args: va_list->char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_vprintf")]
-public static extern  grn_rc grn_text_vprintf(ref grn_ctx ctx, ref grn_table_cursor bulk, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string format, System.IntPtr args) ;
+    public static extern  grn_rc grn_text_vprintf(ref grn_ctx ctx, ref grn_table_cursor bulk, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string format, System.IntPtr args) ;
 
     
     /// Return Type: void
@@ -2970,7 +2970,7 @@ public static extern  grn_rc grn_text_vprintf(ref grn_ctx ctx, ref grn_table_cur
     ///obj: grn_obj*
     ///format: grn_obj_format*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_output_obj")]
-public static extern  void grn_output_obj(ref grn_ctx ctx, ref grn_table_cursor outbuf, grn_content_type output_type, ref grn_table_cursor obj, ref grn_obj_format format) ;
+    public static extern  void grn_output_obj(ref grn_ctx ctx, ref grn_table_cursor outbuf, grn_content_type output_type, ref grn_table_cursor obj, ref grn_obj_format format) ;
 
     
     /// Return Type: void
@@ -2982,7 +2982,7 @@ public static extern  void grn_output_obj(ref grn_ctx ctx, ref grn_table_cursor 
     ///file: char*
     ///line: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_output_envelope")]
-public static extern  void grn_output_envelope(ref grn_ctx ctx, grn_rc rc, ref grn_table_cursor head, ref grn_table_cursor body, ref grn_table_cursor foot, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string file, int line) ;
+    public static extern  void grn_output_envelope(ref grn_ctx ctx, grn_rc rc, ref grn_table_cursor head, ref grn_table_cursor body, ref grn_table_cursor foot, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string file, int line) ;
 
     
     /// Return Type: void
@@ -2990,13 +2990,13 @@ public static extern  void grn_output_envelope(ref grn_ctx ctx, grn_rc rc, ref g
     ///name: char*
     ///nelements: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_output_array_open")]
-public static extern  void grn_ctx_output_array_open(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, int nelements) ;
+    public static extern  void grn_ctx_output_array_open(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, int nelements) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_output_array_close")]
-public static extern  void grn_ctx_output_array_close(ref grn_ctx ctx) ;
+    public static extern  void grn_ctx_output_array_close(ref grn_ctx ctx) ;
 
     
     /// Return Type: void
@@ -3004,20 +3004,20 @@ public static extern  void grn_ctx_output_array_close(ref grn_ctx ctx) ;
     ///name: char*
     ///nelements: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_output_map_open")]
-public static extern  void grn_ctx_output_map_open(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, int nelements) ;
+    public static extern  void grn_ctx_output_map_open(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, int nelements) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_output_map_close")]
-public static extern  void grn_ctx_output_map_close(ref grn_ctx ctx) ;
+    public static extern  void grn_ctx_output_map_close(ref grn_ctx ctx) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     ///value: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_output_int32")]
-public static extern  void grn_ctx_output_int32(ref grn_ctx ctx, int value) ;
+    public static extern  void grn_ctx_output_int32(ref grn_ctx ctx, int value) ;
 
     
     /// Return Type: void
@@ -3025,21 +3025,21 @@ public static extern  void grn_ctx_output_int32(ref grn_ctx ctx, int value) ;
     ///param1: int
     ///value: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_output_int64")]
-public static extern  void grn_ctx_output_int64(ref grn_ctx ctx, int param1, int value) ;
+    public static extern  void grn_ctx_output_int64(ref grn_ctx ctx, int param1, int value) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     ///value: double
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_output_float")]
-public static extern  void grn_ctx_output_float(ref grn_ctx ctx, double value) ;
+    public static extern  void grn_ctx_output_float(ref grn_ctx ctx, double value) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     ///value: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_output_cstr")]
-public static extern  void grn_ctx_output_cstr(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string value) ;
+    public static extern  void grn_ctx_output_cstr(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string value) ;
 
     
     /// Return Type: void
@@ -3047,14 +3047,14 @@ public static extern  void grn_ctx_output_cstr(ref grn_ctx ctx, [InAttribute()] 
     ///value: char*
     ///value_len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_output_str")]
-public static extern  void grn_ctx_output_str(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string value, uint value_len) ;
+    public static extern  void grn_ctx_output_str(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string value, uint value_len) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     ///value: grn_bool->unsigned char
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_output_bool")]
-public static extern  void grn_ctx_output_bool(ref grn_ctx ctx, byte value) ;
+    public static extern  void grn_ctx_output_bool(ref grn_ctx ctx, byte value) ;
 
     
     /// Return Type: void
@@ -3062,13 +3062,13 @@ public static extern  void grn_ctx_output_bool(ref grn_ctx ctx, byte value) ;
     ///value: grn_obj*
     ///format: grn_obj_format*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_output_obj")]
-public static extern  void grn_ctx_output_obj(ref grn_ctx ctx, ref grn_table_cursor value, ref grn_obj_format format) ;
+    public static extern  void grn_ctx_output_obj(ref grn_ctx ctx, ref grn_table_cursor value, ref grn_obj_format format) ;
 
     
     /// Return Type: char*
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_get_mime_type")]
-public static extern  System.IntPtr grn_ctx_get_mime_type(ref grn_ctx ctx) ;
+    public static extern  System.IntPtr grn_ctx_get_mime_type(ref grn_ctx ctx) ;
 
     
     /// Return Type: void
@@ -3086,14 +3086,14 @@ public static extern  System.IntPtr grn_ctx_get_mime_type(ref grn_ctx ctx) ;
     ///obj: grn_obj*
     ///format: grn_obj_format*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_text_otoj")]
-public static extern  grn_rc grn_text_otoj(ref grn_ctx ctx, ref grn_table_cursor bulk, ref grn_table_cursor obj, ref grn_obj_format format) ;
+    public static extern  grn_rc grn_text_otoj(ref grn_ctx ctx, ref grn_table_cursor bulk, ref grn_table_cursor obj, ref grn_obj_format format) ;
 
     
     /// Return Type: void
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_time_now")]
-public static extern  void grn_time_now(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  void grn_time_now(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: grn_str*
@@ -3102,14 +3102,14 @@ public static extern  void grn_time_now(ref grn_ctx ctx, ref grn_table_cursor ob
     ///str_len: unsigned int
     ///flags: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_str_open")]
-public static extern  System.IntPtr grn_str_open(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_len, int flags) ;
+    public static extern  System.IntPtr grn_str_open(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_len, int flags) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///nstr: grn_str*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_str_close")]
-public static extern  grn_rc grn_str_close(ref grn_ctx ctx, ref grn_str nstr) ;
+    public static extern  grn_rc grn_str_close(ref grn_ctx ctx, ref grn_str nstr) ;
 
     
     /// Return Type: grn_obj*
@@ -3119,7 +3119,7 @@ public static extern  grn_rc grn_str_close(ref grn_ctx ctx, ref grn_str nstr) ;
     ///normalizer: grn_obj*
     ///flags: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_string_open")]
-public static extern  System.IntPtr grn_string_open(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string @string, uint length_in_bytes, ref grn_table_cursor normalizer, int flags) ;
+    public static extern  System.IntPtr grn_string_open(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string @string, uint length_in_bytes, ref grn_table_cursor normalizer, int flags) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3128,14 +3128,14 @@ public static extern  System.IntPtr grn_string_open(ref grn_ctx ctx, [InAttribut
     ///original: char**
     ///length_in_bytes: unsigned int*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_string_get_original")]
-public static extern  grn_rc grn_string_get_original(ref grn_ctx ctx, ref grn_table_cursor @string, ref System.IntPtr original, ref uint length_in_bytes) ;
+    public static extern  grn_rc grn_string_get_original(ref grn_ctx ctx, ref grn_table_cursor @string, ref System.IntPtr original, ref uint length_in_bytes) ;
 
     
     /// Return Type: int
     ///ctx: grn_ctx*
     ///string: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_string_get_flags")]
-public static extern  int grn_string_get_flags(ref grn_ctx ctx, ref grn_table_cursor @string) ;
+    public static extern  int grn_string_get_flags(ref grn_ctx ctx, ref grn_table_cursor @string) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3145,7 +3145,7 @@ public static extern  int grn_string_get_flags(ref grn_ctx ctx, ref grn_table_cu
     ///length_in_bytes: unsigned int*
     ///n_characters: unsigned int*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_string_get_normalized")]
-public static extern  grn_rc grn_string_get_normalized(ref grn_ctx ctx, ref grn_table_cursor @string, ref System.IntPtr normalized, ref uint length_in_bytes, ref uint n_characters) ;
+    public static extern  grn_rc grn_string_get_normalized(ref grn_ctx ctx, ref grn_table_cursor @string, ref System.IntPtr normalized, ref uint length_in_bytes, ref uint n_characters) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3155,14 +3155,14 @@ public static extern  grn_rc grn_string_get_normalized(ref grn_ctx ctx, ref grn_
     ///length_in_bytes: unsigned int
     ///n_characters: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_string_set_normalized")]
-public static extern  grn_rc grn_string_set_normalized(ref grn_ctx ctx, ref grn_table_cursor @string, System.IntPtr normalized, uint length_in_bytes, uint n_characters) ;
+    public static extern  grn_rc grn_string_set_normalized(ref grn_ctx ctx, ref grn_table_cursor @string, System.IntPtr normalized, uint length_in_bytes, uint n_characters) ;
 
     
     /// Return Type: short*
     ///ctx: grn_ctx*
     ///string: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_string_get_checks")]
-public static extern  System.IntPtr grn_string_get_checks(ref grn_ctx ctx, ref grn_table_cursor @string) ;
+    public static extern  System.IntPtr grn_string_get_checks(ref grn_ctx ctx, ref grn_table_cursor @string) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3170,14 +3170,14 @@ public static extern  System.IntPtr grn_string_get_checks(ref grn_ctx ctx, ref g
     ///string: grn_obj*
     ///checks: short*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_string_set_checks")]
-public static extern  grn_rc grn_string_set_checks(ref grn_ctx ctx, ref grn_table_cursor @string, ref short checks) ;
+    public static extern  grn_rc grn_string_set_checks(ref grn_ctx ctx, ref grn_table_cursor @string, ref short checks) ;
 
     
     /// Return Type: char*
     ///ctx: grn_ctx*
     ///string: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_string_get_types")]
-public static extern  System.IntPtr grn_string_get_types(ref grn_ctx ctx, ref grn_table_cursor @string) ;
+    public static extern  System.IntPtr grn_string_get_types(ref grn_ctx ctx, ref grn_table_cursor @string) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3185,14 +3185,14 @@ public static extern  System.IntPtr grn_string_get_types(ref grn_ctx ctx, ref gr
     ///string: grn_obj*
     ///types: unsigned char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_string_set_types")]
-public static extern  grn_rc grn_string_set_types(ref grn_ctx ctx, ref grn_table_cursor @string, System.IntPtr types) ;
+    public static extern  grn_rc grn_string_set_types(ref grn_ctx ctx, ref grn_table_cursor @string, System.IntPtr types) ;
 
     
     /// Return Type: grn_encoding->Anonymous_4cc9cdbc_7025_4e0d_86b2_46372051bb24
     ///ctx: grn_ctx*
     ///string: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_string_get_encoding")]
-public static extern  grn_encoding grn_string_get_encoding(ref grn_ctx ctx, ref grn_table_cursor @string) ;
+    public static extern  grn_encoding grn_string_get_encoding(ref grn_ctx ctx, ref grn_table_cursor @string) ;
 
     
     /// Return Type: int
@@ -3200,7 +3200,7 @@ public static extern  grn_encoding grn_string_get_encoding(ref grn_ctx ctx, ref 
     ///str: char*
     ///end: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_charlen")]
-public static extern  int grn_charlen(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string end) ;
+    public static extern  int grn_charlen(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string end) ;
 
     
     /// Return Type: grn_obj*
@@ -3208,14 +3208,14 @@ public static extern  int grn_charlen(ref grn_ctx ctx, [InAttribute()] [MarshalA
     ///name: char*
     ///name_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_create")]
-public static extern  System.IntPtr grn_expr_create(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
+    public static extern  System.IntPtr grn_expr_create(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///expr: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_close")]
-public static extern  grn_rc grn_expr_close(ref grn_ctx ctx, ref grn_table_cursor expr) ;
+    public static extern  grn_rc grn_expr_close(ref grn_ctx ctx, ref grn_table_cursor expr) ;
 
     
     /// Return Type: grn_obj*
@@ -3224,7 +3224,7 @@ public static extern  grn_rc grn_expr_close(ref grn_ctx ctx, ref grn_table_curso
     ///name: char*
     ///name_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_add_var")]
-public static extern  System.IntPtr grn_expr_add_var(ref grn_ctx ctx, ref grn_table_cursor expr, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
+    public static extern  System.IntPtr grn_expr_add_var(ref grn_ctx ctx, ref grn_table_cursor expr, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
 
     
     /// Return Type: grn_obj*
@@ -3233,7 +3233,7 @@ public static extern  System.IntPtr grn_expr_add_var(ref grn_ctx ctx, ref grn_ta
     ///name: char*
     ///name_size: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_get_var")]
-public static extern  System.IntPtr grn_expr_get_var(ref grn_ctx ctx, ref grn_table_cursor expr, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
+    public static extern  System.IntPtr grn_expr_get_var(ref grn_ctx ctx, ref grn_table_cursor expr, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size) ;
 
     
     /// Return Type: grn_obj*
@@ -3241,7 +3241,7 @@ public static extern  System.IntPtr grn_expr_get_var(ref grn_ctx ctx, ref grn_ta
     ///expr: grn_obj*
     ///offset: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_get_var_by_offset")]
-public static extern  System.IntPtr grn_expr_get_var_by_offset(ref grn_ctx ctx, ref grn_table_cursor expr, uint offset) ;
+    public static extern  System.IntPtr grn_expr_get_var_by_offset(ref grn_ctx ctx, ref grn_table_cursor expr, uint offset) ;
 
     
     /// Return Type: grn_obj*
@@ -3251,7 +3251,7 @@ public static extern  System.IntPtr grn_expr_get_var_by_offset(ref grn_ctx ctx, 
     ///op: grn_operator->Anonymous_0afd231f_39e8_44cf_9c60_faf840d89fa2
     ///nargs: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_append_obj")]
-public static extern  System.IntPtr grn_expr_append_obj(ref grn_ctx ctx, ref grn_table_cursor expr, ref grn_table_cursor obj, grn_operator op, int nargs) ;
+    public static extern  System.IntPtr grn_expr_append_obj(ref grn_ctx ctx, ref grn_table_cursor expr, ref grn_table_cursor obj, grn_operator op, int nargs) ;
 
     
     /// Return Type: grn_obj*
@@ -3261,7 +3261,7 @@ public static extern  System.IntPtr grn_expr_append_obj(ref grn_ctx ctx, ref grn
     ///op: grn_operator->Anonymous_0afd231f_39e8_44cf_9c60_faf840d89fa2
     ///nargs: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_append_const")]
-public static extern  System.IntPtr grn_expr_append_const(ref grn_ctx ctx, ref grn_table_cursor expr, ref grn_table_cursor obj, grn_operator op, int nargs) ;
+    public static extern  System.IntPtr grn_expr_append_const(ref grn_ctx ctx, ref grn_table_cursor expr, ref grn_table_cursor obj, grn_operator op, int nargs) ;
 
     
     /// Return Type: grn_obj*
@@ -3272,7 +3272,7 @@ public static extern  System.IntPtr grn_expr_append_const(ref grn_ctx ctx, ref g
     ///op: grn_operator->Anonymous_0afd231f_39e8_44cf_9c60_faf840d89fa2
     ///nargs: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_append_const_str")]
-public static extern  System.IntPtr grn_expr_append_const_str(ref grn_ctx ctx, ref grn_table_cursor expr, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_size, grn_operator op, int nargs) ;
+    public static extern  System.IntPtr grn_expr_append_const_str(ref grn_ctx ctx, ref grn_table_cursor expr, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_size, grn_operator op, int nargs) ;
 
     
     /// Return Type: grn_obj*
@@ -3282,7 +3282,7 @@ public static extern  System.IntPtr grn_expr_append_const_str(ref grn_ctx ctx, r
     ///op: grn_operator->Anonymous_0afd231f_39e8_44cf_9c60_faf840d89fa2
     ///nargs: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_append_const_int")]
-public static extern  System.IntPtr grn_expr_append_const_int(ref grn_ctx ctx, ref grn_table_cursor expr, int i, grn_operator op, int nargs) ;
+    public static extern  System.IntPtr grn_expr_append_const_int(ref grn_ctx ctx, ref grn_table_cursor expr, int i, grn_operator op, int nargs) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3291,7 +3291,7 @@ public static extern  System.IntPtr grn_expr_append_const_int(ref grn_ctx ctx, r
     ///op: grn_operator->Anonymous_0afd231f_39e8_44cf_9c60_faf840d89fa2
     ///nargs: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_append_op")]
-public static extern  grn_rc grn_expr_append_op(ref grn_ctx ctx, ref grn_table_cursor expr, grn_operator op, int nargs) ;
+    public static extern  grn_rc grn_expr_append_op(ref grn_ctx ctx, ref grn_table_cursor expr, grn_operator op, int nargs) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3302,7 +3302,7 @@ public static extern  grn_rc grn_expr_append_op(ref grn_ctx ctx, ref grn_table_c
     ///escape_character: char
     ///escaped_query: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_syntax_escape")]
-public static extern  grn_rc grn_expr_syntax_escape(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string query, int query_size, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string target_characters, byte escape_character, ref grn_table_cursor escaped_query) ;
+    public static extern  grn_rc grn_expr_syntax_escape(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string query, int query_size, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string target_characters, byte escape_character, ref grn_table_cursor escaped_query) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3311,14 +3311,14 @@ public static extern  grn_rc grn_expr_syntax_escape(ref grn_ctx ctx, [InAttribut
     ///query_size: int
     ///escaped_query: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_syntax_escape_query")]
-public static extern  grn_rc grn_expr_syntax_escape_query(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string query, int query_size, ref grn_table_cursor escaped_query) ;
+    public static extern  grn_rc grn_expr_syntax_escape_query(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string query, int query_size, ref grn_table_cursor escaped_query) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///expr: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_compile")]
-public static extern  grn_rc grn_expr_compile(ref grn_ctx ctx, ref grn_table_cursor expr) ;
+    public static extern  grn_rc grn_expr_compile(ref grn_ctx ctx, ref grn_table_cursor expr) ;
 
     
     /// Return Type: grn_obj*
@@ -3326,20 +3326,20 @@ public static extern  grn_rc grn_expr_compile(ref grn_ctx ctx, ref grn_table_cur
     ///expr: grn_obj*
     ///nargs: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_exec")]
-public static extern  System.IntPtr grn_expr_exec(ref grn_ctx ctx, ref grn_table_cursor expr, int nargs) ;
+    public static extern  System.IntPtr grn_expr_exec(ref grn_ctx ctx, ref grn_table_cursor expr, int nargs) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///obj: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_push")]
-public static extern  grn_rc grn_ctx_push(ref grn_ctx ctx, ref grn_table_cursor obj) ;
+    public static extern  grn_rc grn_ctx_push(ref grn_ctx ctx, ref grn_table_cursor obj) ;
 
     
     /// Return Type: grn_obj*
     ///ctx: grn_ctx*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_pop")]
-public static extern  System.IntPtr grn_ctx_pop(ref grn_ctx ctx) ;
+    public static extern  System.IntPtr grn_ctx_pop(ref grn_ctx ctx) ;
 
     
     /// Return Type: grn_obj*
@@ -3348,7 +3348,7 @@ public static extern  System.IntPtr grn_ctx_pop(ref grn_ctx ctx) ;
     ///domain: grn_id->unsigned int
     ///flags: grn_obj_flags->unsigned short
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_alloc")]
-public static extern  System.IntPtr grn_expr_alloc(ref grn_ctx ctx, ref grn_table_cursor expr, uint domain, ushort flags) ;
+    public static extern  System.IntPtr grn_expr_alloc(ref grn_ctx ctx, ref grn_table_cursor expr, uint domain, ushort flags) ;
 
     
     /// Return Type: grn_obj*
@@ -3358,7 +3358,7 @@ public static extern  System.IntPtr grn_expr_alloc(ref grn_ctx ctx, ref grn_tabl
     ///res: grn_obj*
     ///op: grn_operator->Anonymous_0afd231f_39e8_44cf_9c60_faf840d89fa2
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_select")]
-public static extern  System.IntPtr grn_table_select(ref grn_ctx ctx, ref grn_table_cursor table, ref grn_table_cursor expr, ref grn_table_cursor res, grn_operator op) ;
+    public static extern  System.IntPtr grn_table_select(ref grn_ctx ctx, ref grn_table_cursor table, ref grn_table_cursor expr, ref grn_table_cursor res, grn_operator op) ;
 
     
     /// Return Type: int
@@ -3368,7 +3368,7 @@ public static extern  System.IntPtr grn_table_select(ref grn_ctx ctx, ref grn_ta
     ///str_size: unsigned int
     ///res: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_obj_columns")]
-public static extern  int grn_obj_columns(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_size, ref grn_table_cursor res) ;
+    public static extern  int grn_obj_columns(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_size, ref grn_table_cursor res) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3381,7 +3381,7 @@ public static extern  int grn_obj_columns(ref grn_ctx ctx, ref grn_table_cursor 
     ///default_op: grn_operator->Anonymous_0afd231f_39e8_44cf_9c60_faf840d89fa2
     ///flags: grn_expr_flags->unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_parse")]
-public static extern  grn_rc grn_expr_parse(ref grn_ctx ctx, ref grn_table_cursor expr, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_size, ref grn_table_cursor default_column, grn_operator default_mode, grn_operator default_op, uint flags) ;
+    public static extern  grn_rc grn_expr_parse(ref grn_ctx ctx, ref grn_table_cursor expr, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_size, ref grn_table_cursor default_column, grn_operator default_mode, grn_operator default_op, uint flags) ;
 
     
     /// Return Type: grn_obj*
@@ -3397,7 +3397,7 @@ public static extern  grn_rc grn_expr_parse(ref grn_ctx ctx, ref grn_table_curso
     ///closetag_lens: unsigned int*
     ///mapping: grn_snip_mapping*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_snip")]
-public static extern  System.IntPtr grn_expr_snip(ref grn_ctx ctx, ref grn_table_cursor expr, int flags, uint width, uint max_results, uint n_tags, ref System.IntPtr opentags, ref uint opentag_lens, ref System.IntPtr closetags, ref uint closetag_lens, ref grn_snip_mapping mapping) ;
+    public static extern  System.IntPtr grn_expr_snip(ref grn_ctx ctx, ref grn_table_cursor expr, int flags, uint width, uint max_results, uint n_tags, ref System.IntPtr opentags, ref uint opentag_lens, ref System.IntPtr closetags, ref uint closetag_lens, ref grn_snip_mapping mapping) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3410,7 +3410,7 @@ public static extern  System.IntPtr grn_expr_snip(ref grn_ctx ctx, ref grn_table
     ///closetags: char**
     ///closetag_lens: unsigned int*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_expr_snip_add_conditions")]
-public static extern  grn_rc grn_expr_snip_add_conditions(ref grn_ctx ctx, ref grn_table_cursor expr, ref grn_table_cursor snip, uint n_tags, ref System.IntPtr opentags, ref uint opentag_lens, ref System.IntPtr closetags, ref uint closetag_lens) ;
+    public static extern  grn_rc grn_expr_snip_add_conditions(ref grn_ctx ctx, ref grn_table_cursor expr, ref grn_table_cursor snip, uint n_tags, ref System.IntPtr opentags, ref uint opentag_lens, ref System.IntPtr closetags, ref uint closetag_lens) ;
 
     
     /// Return Type: grn_table_sort_key*
@@ -3420,7 +3420,7 @@ public static extern  grn_rc grn_expr_snip_add_conditions(ref grn_ctx ctx, ref g
     ///table: grn_obj*
     ///nkeys: unsigned int*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_sort_key_from_str")]
-public static extern  System.IntPtr grn_table_sort_key_from_str(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_size, ref grn_table_cursor table, ref uint nkeys) ;
+    public static extern  System.IntPtr grn_table_sort_key_from_str(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_size, ref grn_table_cursor table, ref uint nkeys) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3428,21 +3428,21 @@ public static extern  System.IntPtr grn_table_sort_key_from_str(ref grn_ctx ctx,
     ///keys: grn_table_sort_key*
     ///nkeys: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_sort_key_close")]
-public static extern  grn_rc grn_table_sort_key_close(ref grn_ctx ctx, ref grn_table_sort_key keys, uint nkeys) ;
+    public static extern  grn_rc grn_table_sort_key_close(ref grn_ctx ctx, ref grn_table_sort_key keys, uint nkeys) ;
 
     
     /// Return Type: grn_bool->unsigned char
     ///ctx: grn_ctx*
     ///table: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_is_grouped")]
-public static extern  byte grn_table_is_grouped(ref grn_ctx ctx, ref grn_table_cursor table) ;
+    public static extern  byte grn_table_is_grouped(ref grn_ctx ctx, ref grn_table_cursor table) ;
 
     
     /// Return Type: unsigned int
     ///ctx: grn_ctx*
     ///table: grn_obj*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_max_n_subrecs")]
-public static extern  uint grn_table_max_n_subrecs(ref grn_ctx ctx, ref grn_table_cursor table) ;
+    public static extern  uint grn_table_max_n_subrecs(ref grn_ctx ctx, ref grn_table_cursor table) ;
 
     
     /// Return Type: grn_obj*
@@ -3454,7 +3454,7 @@ public static extern  uint grn_table_max_n_subrecs(ref grn_ctx ctx, ref grn_tabl
     ///value_type: grn_obj*
     ///max_n_subrecs: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_create_for_group")]
-public static extern  System.IntPtr grn_table_create_for_group(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path, ref grn_table_cursor group_key, ref grn_table_cursor value_type, uint max_n_subrecs) ;
+    public static extern  System.IntPtr grn_table_create_for_group(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string name, uint name_size, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path, ref grn_table_cursor group_key, ref grn_table_cursor value_type, uint max_n_subrecs) ;
 
     
     /// Return Type: unsigned int
@@ -3465,7 +3465,7 @@ public static extern  System.IntPtr grn_table_create_for_group(ref grn_ctx ctx, 
     ///scorebuf: int*
     ///buf_size: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_get_subrecs")]
-public static extern  uint grn_table_get_subrecs(ref grn_ctx ctx, ref grn_table_cursor table, uint id, ref uint subrecbuf, ref int scorebuf, int buf_size) ;
+    public static extern  uint grn_table_get_subrecs(ref grn_ctx ctx, ref grn_table_cursor table, uint id, ref uint subrecbuf, ref int scorebuf, int buf_size) ;
 
     
     /// Return Type: grn_obj*
@@ -3476,7 +3476,7 @@ public static extern  uint grn_table_get_subrecs(ref grn_ctx ctx, ref grn_table_
     ///buf: grn_obj*
     ///addp: grn_bool->unsigned char
     [DllImportAttribute("groonga.dll", EntryPoint="grn_table_tokenize")]
-public static extern  System.IntPtr grn_table_tokenize(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_len, ref grn_table_cursor buf, byte addp) ;
+    public static extern  System.IntPtr grn_table_tokenize(ref grn_ctx ctx, ref grn_table_cursor table, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_len, ref grn_table_cursor buf, byte addp) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3493,7 +3493,7 @@ public static extern  System.IntPtr grn_table_tokenize(ref grn_ctx ctx, ref grn_
     ///each: char*
     ///each_len: unsigned int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_load")]
-public static extern  grn_rc grn_load(ref grn_ctx ctx, grn_content_type input_type, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string table, uint table_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string columns, uint columns_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string values, uint values_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string ifexists, uint ifexists_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string each, uint each_len) ;
+    public static extern  grn_rc grn_load(ref grn_ctx ctx, grn_content_type input_type, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string table, uint table_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string columns, uint columns_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string values, uint values_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string ifexists, uint ifexists_len, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string each, uint each_len) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
@@ -3502,7 +3502,7 @@ public static extern  grn_rc grn_load(ref grn_ctx ctx, grn_content_type input_ty
     ///port: int
     ///flags: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_connect")]
-public static extern  grn_rc grn_ctx_connect(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string host, int port, int flags) ;
+    public static extern  grn_rc grn_ctx_connect(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string host, int port, int flags) ;
 
     
     /// Return Type: unsigned int
@@ -3511,7 +3511,7 @@ public static extern  grn_rc grn_ctx_connect(ref grn_ctx ctx, [InAttribute()] [M
     ///str_len: unsigned int
     ///flags: int
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_send")]
-public static extern  uint grn_ctx_send(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_len, int flags) ;
+    public static extern  uint grn_ctx_send(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string str, uint str_len, int flags) ;
 
     
     /// Return Type: unsigned int
@@ -3520,42 +3520,42 @@ public static extern  uint grn_ctx_send(ref grn_ctx ctx, [InAttribute()] [Marsha
     ///str_len: unsigned int*
     ///flags: int*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_recv")]
-public static extern  uint grn_ctx_recv(ref grn_ctx ctx, ref System.IntPtr str, ref uint str_len, ref int flags) ;
+    public static extern  uint grn_ctx_recv(ref grn_ctx ctx, ref System.IntPtr str, ref uint str_len, ref int flags) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///info: grn_ctx_info*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_info_get")]
-public static extern  grn_rc grn_ctx_info_get(ref grn_ctx ctx, ref grn_ctx_info info) ;
+    public static extern  grn_rc grn_ctx_info_get(ref grn_ctx ctx, ref grn_ctx_info info) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     [DllImportAttribute("groonga.dll", EntryPoint="grn_set_segv_handler")]
-public static extern  grn_rc grn_set_segv_handler() ;
+    public static extern  grn_rc grn_set_segv_handler() ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     [DllImportAttribute("groonga.dll", EntryPoint="grn_set_int_handler")]
-public static extern  grn_rc grn_set_int_handler() ;
+    public static extern  grn_rc grn_set_int_handler() ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     [DllImportAttribute("groonga.dll", EntryPoint="grn_set_term_handler")]
-public static extern  grn_rc grn_set_term_handler() ;
+    public static extern  grn_rc grn_set_term_handler() ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///path: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_pat_remove")]
-public static extern  grn_rc grn_pat_remove(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
+    public static extern  grn_rc grn_pat_remove(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
     ///ctx: grn_ctx*
     ///path: char*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_dat_remove")]
-public static extern  grn_rc grn_dat_remove(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
+    public static extern  grn_rc grn_dat_remove(ref grn_ctx ctx, [InAttribute()] [MarshalAsAttribute(UnmanagedType.LPStr)] string path) ;
 
 }
