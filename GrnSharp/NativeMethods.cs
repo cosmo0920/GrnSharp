@@ -946,8 +946,8 @@ public struct Anonymous_table_cursor_union {
     
     /// Anonymous_c605e26c_0860_4c6d_b847_a3950357afd8
     [FieldOffsetAttribute(0)]
-	public Anonymous_struct_b b;
-    
+    public Anonymous_struct_b b;
+
     /// Anonymous_4b2cc5f2_94a9_46d5_b5aa_e822e3b88c68
     [FieldOffsetAttribute(0)]
     public Anonymous_struct_v v;
@@ -3073,10 +3073,11 @@ public static extern  System.IntPtr grn_ctx_get_mime_type(ref grn_ctx ctx) ;
     
     /// Return Type: void
     ///param0: grn_ctx*
-	///func: Anonymous_ctx_proc_func
+    ///func: Anonymous_ctx_proc_func
     ///func_arg: void*
     [DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_recv_handler_set")]
-	public static extern  void grn_ctx_recv_handler_set(ref grn_ctx param0, Anonymous_ctx_proc_func func, System.IntPtr func_arg) ;
+    public static extern  void grn_ctx_recv_handler_set(ref grn_ctx param0, Anonymous_ctx_proc_func func, System.IntPtr func_arg) ;
+
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
