@@ -2,6 +2,10 @@ using System;
 
 public partial class UnsupportedConstant
 {
+	/// GRN_API -> __declspec(dllimport)
+	/// Error generating expression: Error generating function call.  Operation not implemented
+	public const string GRN_API = "__declspec(dllimport)";
+
 	/// Warning: Generation of Method Macros is not supported at this time
 	/// GRN_CTX_USER_DATA -> "(ctx) (&((ctx)->user_data))"
 	public const string GRN_CTX_USER_DATA = "(ctx) (&((ctx)->user_data))";

@@ -6,10 +6,6 @@ public partial class NativeConstants {
     ///パラメータ名: node
     public const string GROONGA_H = "";
     
-    /// GRN_API -> __declspec(dllimport)
-    /// Error generating expression: Error generating function call.  Operation not implemented
-    public const string GRN_API = "__declspec(dllimport)";
-    
     /// GRN_ID_NIL -> (0x00)
     public const int GRN_ID_NIL = 0;
     
