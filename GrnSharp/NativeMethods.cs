@@ -658,7 +658,7 @@ public struct grn_table_cursor {
     public grn_obj_header header;
     
     /// Anonymous_4694aee7_1960_4616_aea1_b13a0d4c24ff
-    public Anonymous_4694aee7_1960_4616_aea1_b13a0d4c24ff u;
+    public Anonymous_table_cursor_union u;
 }
 
 [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential)]
@@ -944,22 +944,22 @@ public struct _grn_pat_scan_hit {
 }
 
 [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Explicit)]
-public struct Anonymous_4694aee7_1960_4616_aea1_b13a0d4c24ff {
+public struct Anonymous_table_cursor_union {
     
     /// Anonymous_c605e26c_0860_4c6d_b847_a3950357afd8
     [System.Runtime.InteropServices.FieldOffsetAttribute(0)]
-    public Anonymous_c605e26c_0860_4c6d_b847_a3950357afd8 b;
+	public Anonymous_struct_b b;
     
     /// Anonymous_4b2cc5f2_94a9_46d5_b5aa_e822e3b88c68
     [System.Runtime.InteropServices.FieldOffsetAttribute(0)]
-    public Anonymous_4b2cc5f2_94a9_46d5_b5aa_e822e3b88c68 v;
+    public Anonymous_struct_v v;
 }
 
 /// Return Type: void
 ///param0: grn_ctx*
 ///param1: int
 ///param2: void*
-public delegate void Anonymous_5517a2cc_653b_4180_953f_4cfe2e32be8c(ref grn_ctx param0, int param1, System.IntPtr param2);
+public delegate void Anonymous_ctx_proc_func(ref grn_ctx param0, int param1, System.IntPtr param2);
 
 public enum grn_command_version {
     
@@ -1585,7 +1585,7 @@ public struct grn_expr_var {
 }
 
 [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential)]
-public struct Anonymous_c605e26c_0860_4c6d_b847_a3950357afd8 {
+public struct Anonymous_struct_b {
     
     /// char*
     [System.Runtime.InteropServices.MarshalAsAttribute(System.Runtime.InteropServices.UnmanagedType.LPStr)]
@@ -1601,7 +1601,7 @@ public struct Anonymous_c605e26c_0860_4c6d_b847_a3950357afd8 {
 }
 
 [System.Runtime.InteropServices.StructLayoutAttribute(System.Runtime.InteropServices.LayoutKind.Sequential)]
-public struct Anonymous_4b2cc5f2_94a9_46d5_b5aa_e822e3b88c68 {
+public struct Anonymous_struct_v {
     
     /// grn_obj*
     public System.IntPtr body;
@@ -3075,10 +3075,10 @@ public static extern  System.IntPtr grn_ctx_get_mime_type(ref grn_ctx ctx) ;
     
     /// Return Type: void
     ///param0: grn_ctx*
-    ///func: Anonymous_5517a2cc_653b_4180_953f_4cfe2e32be8c
+	///func: Anonymous_ctx_proc_func
     ///func_arg: void*
     [System.Runtime.InteropServices.DllImportAttribute("groonga.dll", EntryPoint="grn_ctx_recv_handler_set")]
-public static extern  void grn_ctx_recv_handler_set(ref grn_ctx param0, Anonymous_5517a2cc_653b_4180_953f_4cfe2e32be8c func, System.IntPtr func_arg) ;
+	public static extern  void grn_ctx_recv_handler_set(ref grn_ctx param0, Anonymous_ctx_proc_func func, System.IntPtr func_arg) ;
 
     
     /// Return Type: grn_rc->Anonymous_19e5c9fd_16cd_42c7_8739_9e6ced81389a
