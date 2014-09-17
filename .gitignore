@@ -177,3 +177,6 @@ $RECYCLE.BIN/
 
 # SASS Compiler cache
 .sass-cache
+
+# Xamarin Out Put
+*.userprefs
