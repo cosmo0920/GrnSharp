@@ -13,4 +13,10 @@ public class GrnUtil
 	public static grn_encoding grn_ctx_set_encoding(ref grn_ctx ctx, string encoding){
 		return ctx.encoding = NativeMethods.grn_encoding_parse(encoding);
 	}
+
+	public static grn_rc grn_ctx_fix(ref grn_ctx ctx, ref grn_table_cursor obj) {
+		grn_rc result;
+		result = NativeMethods.grn_obj_close(ref ctx, ref obj);
+		return result;
+	}
 }
